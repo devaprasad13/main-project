@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*
+{
+    font-family: sans-serif;
+}
+/*------------ Login container ------------*/
+.hell
+{
+    background:linear-gradient(rgba(18, 66, 117, 0.7),rgba(9, 7, 70, 0.7)),url(back.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+.box-area{
+    width: 930px;
+}
+/*------------ Right box ------------*/
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+/*------------ Custom Placeholder ------------*/
+::placeholder{
+    font-size: 16px;
+}
+.rounded-4{
+    border-radius: 10px 1px 1px 10px;
+    background: rgb(36,91,90);
+background: linear-gradient(128deg, rgba(36,91,90,1) 0%, rgba(35,118,155,1) 0%, rgba(35,152,137,1) 1%, rgba(34,193,195,1) 52%);
+}
+.rounded-5{
+    border-radius: 30px;
+}
+/*------------ For small screens------------*/
+@media only screen and (max-width: 768px){
+    .container
+    {
+        width: 50%;
+        position: relative;
+        top: 2px;
+    }
+     .box-area{
+        margin: 0 10px;
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+}

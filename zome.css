@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100px;
+ background:#fff;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .navbar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+ max-width: 90%;
+ background: #fff;
+ margin: auto;
+}
+
+nav .navbar .menu{
+  display: flex;
+}
+.navbar .menu li{
+  list-style: none;
+
+}
+.navbar .menu li a{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 30px;
+}
+.d1{
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #96c7e8;
+  font-size: 70px;
+  font-weight: 30px;
+  background:linear-gradient(rgba(18, 66, 117, 0.7),rgba(9, 7, 70, 0.7)),url(back.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+.d4{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  padding: 40px 5% 4px;
+    border-top: 6px solid #333;
+    color:#777;
+}
+.d4 .firsthalf
+{
+  width: 50%;
+ 
+}
+
+.d4 .secondhalf
+{
+  width: 50%;
+  justify-content: center;
+  padding-left: 150px;
+  padding-top: 100px;
+}
+section{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #96c7e8;
+  font-size: 70px;
+  font-weight: 30px;
+}
+#About{
+  background: #f2f2f2;
+}
+#Category{
+  background: #e6e6e6;
+}
+#Latest{
+  background: #fff;
+}
+#Contact{
+  background: #f2f2f2;
+}
+#Feedback{
+  background: #e6e6e6;
+}
+.button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #2980b9;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+.d-flex
+{
+  border: none;
+  text-decoration: none;
+}
+.d-flex p{
+  font-size: 19px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+}
+.d-flex i
+{
+  padding-top: 14px;
+}
+
+
+.d-flexs p{
+  font-size: 19px;
+ 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+}

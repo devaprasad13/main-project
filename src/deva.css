@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100px;
+ background:#fff;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .navbar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+ max-width: 90%;
+ background: #fff;
+ margin: auto;
+}
+
+nav .navbar .menu{
+  display: flex;
+}
+.navbar .menu li{
+  list-style: none;
+
+}
+.navbar .menu li a{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 30px;
+}
+.d1{
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #96c7e8;
+  font-size: 70px;
+  font-weight: 30px;
+  background:linear-gradient(rgba(18, 66, 117, 0.7),rgba(9, 7, 70, 0.7)),url(back.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.d4{
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  padding: 40px 5% 4px;
+    border-top: 2px solid #333;
+    color:#777;
+}
+.d44
+{
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+    border-top: 2px solid #333;
+    background-color:#0f3e3c;
+}
+.firsthalfs, .secondhalfs {
+  flex: 1;
+  padding-left: 70px;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+
+.firsthalfs img {
+  width: 100%;
+  max-width: 20em;
+  height: auto;
+}
+
+.d-flexs, .d-flexss {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.liness {
+  width: 180px;
+  height: 1px;
+  background-color: rgb(224, 224, 136) ;
+  margin: 20px;
+ margin-left: 10px;
+  border-radius: 5px;
+}
+
+.d5{
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #96c7e8;
+  font-size: 70px;
+  font-weight: 30px;
+  background: blueviolet;
+  border-top: 2px solid #333;
+}
+.deeee{
+  display: flex;
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+ 
+  border-top: 2px solid #333;
+  color:'black'
+}
+
+.button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #2980b9;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+.d-flex p{
+  font-size: 19px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+}
+.d-flex i
+{
+  padding-top: 14px;
+}
+
+
+.d-flexs p{
+  font-size: 19px;
+  margin-top: 20px;
+  padding-left: 4px;
+  font-family: sans-serif;
+  border: none;
+}
+
+#notify {
+  --color:rgb(12, 65, 103);
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 1.5em;
+  margin: 3px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgb(12, 65, 103);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: rgb(12, 65, 103);
+ }
+ 
+ #notify:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background:rgb(12, 65, 103);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+ }
+ 
+ #notify:hover {
+  color: #fff;
+ }
+ 
+ #notify:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+ }
+ 
+ #notify:hover:before {
+  top: -30px;
+  left: -30px;
+ }
+ 
+ #notify:active:before {
+  background:rgb(12, 65, 103);
+  transition: background 0s;
+ }
+ 
+
+.line
+{
+  width: 180px;
+  height: 2px;
+  background-color: rgb(5, 5, 3) ;
+  margin: 4px;
+ margin-left: 50px;
+  border-radius: 5px;
+   
+}
+.ma
+{
+  color:black;
+
+}
+.d1 .homi
+{
+  font-family: 'Helvetica' ,sans-serif;
+  font-size:'1em';
+}
+.d4 .firsthalf
+{
+  flex: 1;
+    
+}
+.d4 .secondhalf
+{
+  flex: 1;
+  
+}
+@media screen and (max-width:768px) 
+{
+  .d1{
+    height: 100vh;
+    width: 100%;
+  }
+ .d1 .homi
+  {
+    font-size:50px;
+  }
+  .d4{
+    height: 280vh;
+    width: 100%;
+    display: grid;
+  }
+  .d4 .firsthalf
+  {
+    font-size: 2px;
+    margin-top: -90px;
+    width:100px;
+  }
+  .d4 .secondhalf
+  {
+    flex: 100%; 
+    margin-top: -10px;
+  }
+  .d44{
+    height: 100vh;
+  }
+  .firsthalfs, .secondhalfs {
+    flex: 100%;
+    padding-left: 7px;
+    margin-top: 5px;
+  }
+
+  .d5 strong
+  {
+    font-size: 3px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    margin-left: 15px;
+  }
+  
+}

@@ -1,0 +1,118 @@
+
+nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background:#fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+   }
+   
+
+   nav .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    max-width: 100%;
+    
+    margin: auto;
+   }
+.navbar {
+   color:#fff;
+    height: 100px;
+    background-color: rgba(0,0,0,0),;
+  
+  }
+  .navbar-brand {
+    color: pink;
+    font-weight: 500;
+    font-size: 24px;
+    transition: 0.3s color;
+   
+  }
+  
+
+  .navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+
+  }
+  .navbar-toggler:focus,
+  .btn-close:focus {
+
+    box-shadow: none;
+    outline: none;
+    color: blue;
+
+  }
+  .nav-link {
+    color:black;
+    font-size: 20px;
+    
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .nav-link:hover {
+    color:black;
+  background-color: #3bd0f9;
+    border-radius: 3px;
+  }
+ h4
+  {
+    font-weight:900;
+    letter-spacing:5px;
+    font-size:500%;
+    font-family:'sans-serif';
+    text-shadow: 3px 3px grey;
+  }
+  @media screen and (max-width:768px)  {
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      transition: 0.3s ease-in-out;
+    
+      
+    }
+    .nav-link {
+      color: rgb(10, 9, 7);
+      font-size: 10px;
+      position: relative;
+     
+      
+    }
+    .nav-link:hover::before {
+      color:pinkl;
+      width: 100%;
+      visibility: visible;
+    
+    
+    }
+
+          .content .button a
+          {
+            font-size: 9px;
+            padding: 4px 4px;
+          
+          }
+           h4
+          {
+            font-weight:800;
+            letter-spacing:3px;
+            font-size:3em;
+            font-family:'sans-serif';
+            text-shadow: none;
+            color:rgb(255, 255, 255) ;
+          }
+          .line
+          {
+            color: aqua;
+          }
+  }
+
