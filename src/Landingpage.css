@@ -55,31 +55,19 @@ nav .navbar .menu{
   font-family: 'Helvetica','sans-serif',;
 }
 
-.d4{
-  display: flex;
+.d44{
+ 
   height: 80vh;
   width: 100%;
-  padding: 40px 5% 4px;
     border-top: 2px solid #333;
     color:#777;
 }
-.d4 .firsthalf
-{
-  width: 50%;
-  padding-top: 60px;
 
-}
 
-.d4 .secondhalf
-{
-  width: 50%;
-  justify-content: center;
-  padding-left: 160px;
-  padding-top: 40px;
-}
-.d5{
+
+.d555{
   display: flex;
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -93,11 +81,25 @@ nav .navbar .menu{
 
   
   width: 100%;
-  padding-top:120px;
+ height:130vh;
+  padding-top:8%;
   padding-left: 10%;
   padding-right: 10%;
-  background-color:#b1dcf2;
+  background-color:#ffffff;
   border-top: 2px solid #333;
+}
+
+.rol 
+{
+  width: 100%;
+  height:auto;
+  padding-top:8%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom:18%;
+   background-color:#ffffff;
+   border-top: 2px solid #333;
+   background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
 }
 
 #About{
@@ -208,14 +210,8 @@ nav .navbar .menu{
   border-radius: 5px;
    
 }
-.accordion-button:not(.collapsed) {
-  background-color: transparent !important;
-  color: inherit;
-}
 
-button.accordion-button:focus{
-  box-shadow: inherit;
-}
+
 table { 
 	width: 750px; 
 	border-collapse: collapse; 
@@ -293,157 +289,28 @@ and also iPads specifically.
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
-	table { 
-	  	width: 100%; 
-	}
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
 	
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	tr { border: 1px solid #ccc; }
-	
-	td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
-	}
-
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-		/* Label the data */
-		content: attr(data-column);
-   color:rgb(192, 44, 236) ;
-		color: #000;
-		font-weight: bold;
-	}
-
+  .vls{
+    height:220vh;
+   
+  }
+  #fon 
+  {
+    padding-left: 1px;
+    font-size: 80px;
+    color:#2980b9;
+  
+  }
+  .rol
+  {
+    padding-top:0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom:0%;
+  }
 }
 
-.contact-info {
-  width: 50%;
-  background-color: #ffea4e;
-}
 
-.contact-info-item {
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.contact-info-icon {
-  height: 70px;
-  width: 70px;
-  background-color: black;
-  text-align: center;
-  border-radius: 50%;
-}
-
-.contact-info-icon i {
-  font-size: 30px;
-  line-height: 70px;
-}
-
-.contact-info-content {
-  margin-left: 20px;
-}
-
-.contact-info-content h4 {
-  color: #1da9c0;
-  font-size: 1.4em;
-  margin-bottom: 5px;
-}
-
-.contact-info-content p {
-  color: #FFF;
-  font-size: 1em;
-}
-
-.contact-form {
-  background-color: #fff;
-  padding: 40px;
-  width: 80%;
-  padding-bottom: 20px;
-  padding-top: 25px;
-}
-
-.contact-form h2 {
-  font-weight: bold;
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.contact-form .input-box {
-  position: relative;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.contact-form .input-box input,
-.contact-form .input-box textarea{
-  width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  border: none;
-  border-bottom: 2px solid #333;
-  outline: none;
-  resize: none;
-}
-
-.contact-form .input-box span {
-  position: absolute;
-  left: 0;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  pointer-events: none;
-  transition: 0.5s;
-  color: #666;
-}
-
-.contact-form .input-box input:focus ~ span,
-.contact-form .input-box textarea:focus ~ span{
-  color: #e91e63;
-  font-size: 12px;
-  transform: translateY(-20px);
-}
-
-.contact-form .input-box input[type="submit"]
-{
-  width: 100%;
-  background: #00bcd4;
-  color: #FFF;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
-  border: 1px solid #00bcd4;
-  transition: 0.5s;
-}
-
-.contact-form .input-box input[type="submit"]:hover
-{
-  background: #FFF;
-  color: #00bcd4;
-}
 
 @media (max-width: 991px) {
   section {
@@ -491,5 +358,23 @@ only screen and (max-width: 760px),
     {
       display: none;
     }
+
+    .vls #fon {
+       /* Adjust font size for larger screens */
+      padding-left: 2%; 
+      font-size: 3rem;/* Adjust padding for larger screens */
+  }
+  .vls #fon h5
+  {
+    font-size: 60rem;
+  }
+  .d44{
+    height: auto;
+  }
+
+  a#touchs
+  {
+    margin-right: 5px;
+  }
 }
 

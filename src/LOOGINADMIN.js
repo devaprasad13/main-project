@@ -9,6 +9,7 @@ export default function ADMIN()
     return(
         <>
          <div class='hell'>
+            <div data-aos="fade-right" data-aos-duration="1000">
 <div class="container d-flex justify-content-center align-items-center min-vh-100" style={{paddingTop:'92px'}}>
 
 <div class="row border rounded-5 p-3 bg-white shadow box-area">
@@ -52,6 +53,7 @@ export default function ADMIN()
          
    </div>
 </div> 
+</div>
 </div>
 </div>
 </div>

@@ -8,8 +8,8 @@ export default function LOGIN()
     const navigate = useNavigate();
     return(
         <>
-         <div class='hell'>
-            <div class='bor'>
+         <div class='hell' >
+            <div class='bor'data-aos="zoom-in-up" data-aos-duration="1000">
 <div class="container d-flex justify-content-center align-items-center min-vh-100" style={{paddingTop:'92px'}}>
 
 <div class="row border rounded-5 p-3  shadow box-area bg-white" 

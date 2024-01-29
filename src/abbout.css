@@ -48,17 +48,23 @@ nav .navbar .menu{
   color: #96c7e8;
   font-size: 70px;
   font-weight: 30px;
-  background:linear-gradient(rgba(18, 66, 117, 0.7),rgba(9, 7, 70, 0.7)),url(p2.jpg);
+ background:linear-gradient(rgba(18, 66, 117, 0.7),rgba(9, 7, 70, 0.7)),url(p2.jpg); 
   background-position: center;
   background-size: cover;
   font-family: 'Helvetica','sans-serif',;
 }
+a.pinky
+{
+  font-family: 'Exo 2', sans-serif;
 
+}
+a.active
+{
+  font-family: 'Exo 2', sans-serif;
+}
 .d4{
-  display: flex;
   height: 80vh;
   width: 100%;
-  padding: 40px 5% 4px;
     border-top: 2px solid #333;
     color:#777;
 }
@@ -235,47 +241,6 @@ and also iPads specifically.
 only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px)  {
 
-	table { 
-	  	width: 100%; 
-	}
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
-	
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	tr { border: 1px solid #ccc; }
-	
-	td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
-	}
-
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-		/* Label the data */
-		content: attr(data-column);
-   color:rgb(192, 44, 236) ;
-		color: #000;
-		font-weight: bold;
-	}
 
 }
 
@@ -387,7 +352,7 @@ only screen and (max-width: 760px),
   color: #00bcd4;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width:768px) {
   section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -405,6 +370,27 @@ only screen and (max-width: 760px),
   .contact-form {
     width: 100%;
   }
+   .met
+  {
+   font-size: 50px;
+  }
+ li
+ {
+ 
+  padding-right: 10px;
+ }
+ .d7
+ {
+  height:auto;
+ }
+.left 
+ {
+  margin-right: 50px;
+ }
+ ul .breadcrumb
+ {
+  padding-right: 10px;
+ }
 }
 
 

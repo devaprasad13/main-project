@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom'
 import './deva.css'
-import pho from './45454.jpg'
+import pho from './ioo.PNG'
+import hel from './45454.jpg'
 import { useNavigate } from 'react-router-dom';
+import Rules from './rules';
 export default function Miniland()
 {
   const navigate = useNavigate();
@@ -12,24 +14,33 @@ export default function Miniland()
       <div class="logo">
         <img id="#logo" src={pho} style={
           {
-            width:'170px',
-           marginLeft:'10px',
+            width:'70px',
+           marginLeft:'-20px',
            
           }
         }>
         
         </img>
+       
       </div>
+      <span class = "kk" style={
+          {
+            color:'black',
+            letterSpacing:'2px',
+            fontSize:'170%',
+            fontWeight:'bold',
+            marginTop:"9px",
+           fontFamily:'Zilla Slab serif',
+          
+            
+
+          }
+        }>KCE TRANSPORT</span>
+      <div class='all'></div>
       <ul class="menu">
        
-        <li><Link to="/card" style={
-          {
-            background:'#29add9',
-            borderRadius:'10px',
-            padding:'10px 20px 10px 20px',
-             marginTop:'260px',
-            marginRight:'10px'   ,       }
-        }>Login</Link></li>
+        <li ><button  type="button"  id='colo'  onClick={()=>navigate('/card') }>Login</button>
+</li>
       </ul>
     </div>
   </nav>
@@ -44,7 +55,7 @@ export default function Miniland()
   }}>
        <div class='firsthalfs' data-aos="fade-right" data-aos-duration="1000">
         <strong>
-               <img class='photooo'src={pho} style={
+               <img class='photooo'src={hel} style={
                 {
                   width:'20em',
                 }
@@ -89,6 +100,7 @@ export default function Miniland()
                   
                </div>
    </div>
+  
    <div class="d5">
     <strong style={
       { 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700&family=Zilla+Slab:wght@500&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -6,11 +7,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 nav{
- position: fixed;
+ position: sticky;
+ overflow: hidden;
  left: 0;
  top: 0;
  width: 100%;
- height: 100px;
+ height: 80px;
  background:#fff;
  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -18,7 +20,7 @@ nav .navbar{
  display: flex;
  align-items: center;
  justify-content: space-between;
- height: 100%;
+ height: 80%;
  max-width: 90%;
  background: #fff;
  margin: auto;
@@ -60,6 +62,15 @@ nav .navbar .menu{
     border-top: 2px solid #333;
     color:#777;
 }
+/* TransportRules */
+
+.all
+{
+  width:1px;
+  height:74px;
+  background-color: #000000;
+  margin-right: 41em;
+}
 .d44
 {
   height: 80vh;
@@ -97,6 +108,18 @@ nav .navbar .menu{
 }
 
 .d5{
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #96c7e8;
+  font-size: 70px;
+  font-weight: 30px;
+  background: blueviolet;
+  border-top: 2px solid #333;
+}
+.d59{
   display: flex;
   height: 10vh;
   width: 100%;
@@ -232,6 +255,60 @@ nav .navbar .menu{
   flex: 1;
   
 }
+#colo
+{
+  --color: #020202;
+  padding: 0.5em 1.3em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 2px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+}
+#colo::before, #colo::after
+{
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: rgb(24, 169, 227);
+  transition: 1s ease;
+}
+#colo::before
+{
+  top: -1em;
+ left: -1em;
+}
+#colo::after
+{
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+#colo:hover::before, #colo:hover::after {
+  height: 410px;
+  width: 410px;
+ }
+ 
+ #colo:hover {
+  color: rgb(10, 25, 30);
+ }
+ 
+ #colo:active {
+  filter: brightness(.8);
+ }
+ 
 @media screen and (max-width:768px) 
 {
   .d1{
@@ -274,5 +351,18 @@ nav .navbar .menu{
     word-spacing: 0px;
     margin-left: 15px;
   }
-  
+  .all
+  {
+    display: none;
+  }
+  span.kk
+  {
+    font-size: 5px;
+    display: none;
+   
+  }
+  #logo
+          {
+            width: 2px;
+          }
 }

@@ -5,16 +5,26 @@ import './abbout.css'
 import Card from 'react-bootstrap/Card';
 import pi from './io.jpg'
 import { Link } from 'react-router-dom';
+import Running from './run';
+import Her from './dummy';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import './run.css'
 export default function Abbout()
 {
     return (
-        <>
+        <><div>
           <Bar/> 
-  <div id="Home" class='d11'> 
+          </div>
+        
+        
+      
+  <div id="Home" class='d11'>
+  
   <div class='header-contentss'  data-aos="zoom-in" data-aos-duration="1000">
 
             
-<h7 style={{
+<h7 class='met' style={{
    fontFamily: 'Helvetica sans-serif',
 }}>TRANSPORT</h7>
 <div class='lines'></div>
@@ -33,7 +43,7 @@ export default function Abbout()
                     </li>
                     <li><i class='bx bx-chevron-right' style={{fontSize:'30px',paddingTop:'5px'}} ></i></li>
                     <li>
-                        <Link class="active" href="">About us</Link>
+                        <a class="active" href="#abo">About us</a>
                     </li>
                 </ul> 
             </div>
@@ -41,7 +51,7 @@ export default function Abbout()
    </div>
   </div>
 
-  <div  class='d7'>
+  <div  class='d7' id='abo'>
  <div data-aos="zoom-in" data-aos-duration="1000" > <h5  style={{
       fontSize:'60px',
       marginTop:'5px',
@@ -51,42 +61,35 @@ export default function Abbout()
       alignItems:'center',
       fontWeight:'500'
      }}>About us</h5></div>
- <div style={
-            {
-          
-              width: '210px',
-              height: '1px',
-              backgroundColor:'#f58b0a' ,
-              textAlign:'center',
-              alignItems:'center',
-           borderRadius: '5px',
-            marginLeft:'31em'
-       
-          
-            }
-          }></div>
+
   <div class="companyss" style={{
           display:'flex',
           flexDirection:'row',
           justifyContent:'space-between'
        
   }}>
-    <div class="imgss" data-aos="fade-right"  data-aos-duration="1000"  style={{
+      <Row>
+          <Col >
+
+          <div class="imgss" data-aos="fade-right"  data-aos-duration="1000"  style={{
           width:'100%',
-          margin: '1rem 1rem 1rem 2rem',
+         
     }}>
       <img src={pi}  class='apla'style={{
         width:'100%',
-        paddingTop:'70px'
+        padding:'60px 20px 0px 20px'
       }}/>
     </div>
+          </Col>
+          <Col >
+
     <div data-aos="fade-left"  data-aos-duration="1000" class="company-infoss" style={{
       display:'flex',
       flexDirection:'column',
       justifyContent:'center',
       width:'100%',
       marginRight:'3rem',
-      paddingTop:'70px'
+      paddingTop:'50px'
     }}>
       <span style={{
         fontSize: '2rem',
@@ -103,6 +106,11 @@ export default function Abbout()
         Welcome to <b>KARPAGAM COLLEGE OF ENGINEERING </b>Transport Services, where convenience meets safety on the journey to academic excellence. Our commitment is to provide reliable and efficient transportation solutions for the vibrant community of students at KARPAGAM COLLEGE. As an integral part of campus life, we strive to enhance the overall student experience by ensuring seamless and secure travel.
       </p>
     </div>
+  
+          </Col>
+        </Row>
+      
+   
   </div>
 
   </div>
@@ -112,83 +120,10 @@ export default function Abbout()
 
 
   
-  <div class='d4' id='down'  style={{
+  <div class='d44'   style={{
     background:'white'
   }}>
-       <div class='firsthalf' data-aos="fade-right" data-aos-duration="1000">
-        <strong>
-               <img src={pho} style={
-                {
-                  width:'20em',
-                }
-               }></img>
-               <br></br>
-
-
-        </strong>
-        <div class="d-flex">
-                    <i class="bi bi-geo-alt-fill"></i>
-                    <p > Myleripalayam Village, Othakkal Mandapam, Tamil Nadu 641032</p>
-                  </div>
-                  <div class="d-flex">
-                    <i class="bi bi-telephone-fill"></i>
-                    <p>Contact :- +91 – 422 2619005</p>
-                  </div>
-                  <div class="d-flex">
-                    <i class="bi bi-envelope-fill"></i>
-                    <p>Email:- kcetransport@gmail.com</p>
-                  </div>
-                  <div class="d-flex">
-                    <i class="bi bi-browser-chrome"></i>
-                    <p>Website: www.karpagam college of Engineering.com</p>
-                  </div>
-              </div>
-            
-
-       <div class='secondhalf' data-aos="fade-left"  data-aos-duration="1000">
-             <h1 style={{
-              paddingLeft:'50px',
-              fontWeight:'700'
-             }}>Get in Connect</h1>
-<div class="contact-form">
-<div style={
-            {
-              width: '210px',
-              height: '2px',
-              backgroundColor:'#f2820a' ,
-              marginTop:'-10px',
-              marginLeft:'4em',
-              
-           borderRadius: '2px',
-          
-            }
-          }></div>
-          <form action="" id="contact-form">
-           
-            <div class="input-box">
-              <input type="text" required="true" name=""/>
-              <span>Full Name</span>
-            </div>
-            
-            <div class="input-box">
-              <input type="email" required="true" name=""/>
-              <span>Email</span>
-            </div>
-            
-            <div class="input-box">
-              <textarea required="true" name=""></textarea>
-              <span>Type your Message...</span>
-            </div>
-            
-            <div class="input-box">
-              <input type="submit" value="Send" name=""/>
-            </div>
-          </form>
-        </div>
-        
-               
-                  
-               </div>
+       <Her/>
    </div>
    
    <div class="d5"  >

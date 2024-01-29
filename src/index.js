@@ -9,12 +9,13 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App'
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import Running from './run';
 
 // ..
 AOS.init();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+<BrowserRouter>
   <React.StrictMode>
    <App/>
   </React.StrictMode>

@@ -1,23 +1,47 @@
 import { Link } from 'react-router-dom';
 import './Barnav.css';
 import pho from './45454.jpg';
-
+import po from './ioo.PNG'
+import Running from './run';
 export default function Bar()
 {
    return (
     <>
-     
+   <div class='mod'>
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
         <div class="logo">
-        <img src={pho} style={
+        <img id="#logo" src={po} style={
           {
-            width:'170px',
+            width:'70px',
+           marginLeft:'-10px',
+           
           }
         }>
         
         </img>
+       
       </div>
+      <div class='p1'>
+      <span  class="ml" style={
+          {
+            color:'black',
+            letterSpacing:'2px',
+            fontSize:'170%',
+            fontWeight:'bold',
+            marginTop:"9px",
+            marginLeft:'5px',
+           fontFamily:'Zilla Slab serif',
+          }
+        }>K<span style={{color:"red",  fontFamily:'Zilla Slab serif',}}>C</span>E TRANSPORT</span></div>
+         <div class='y1' style={
+          {
+            width:"1px",
+          height:"74px",
+  backgroundColor: "#000000",
+  marginLeft:'20px',
+          }
+        }></div>
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -26,7 +50,7 @@ export default function Bar()
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-               K C E
+               KARPAGAM TRANSPORT
               </h5>
               <button
                 type="button"
@@ -43,30 +67,30 @@ export default function Bar()
                     aria-current="page"
                     to="/land"
                   >
-                  <i class="bi bi-house"></i> Home
+                  <i class="bi bi-house"></i> HOME
                   </Link>
                 </li>
                 <li class="nav-item">
                   <Link class="nav-link mx-lg-2" to="/abbout">
-                  <i class="bi bi-file-earmark-person"></i>   About
+                  <i class="bi bi-file-earmark-person"></i>   ABOUT
                   </Link>
                 </li>
                 <li class="nav-item ">
           <Link class="nav-link item" to="/fee" role="button"aria-expanded="false">
-          <i class="bi bi-clipboard"></i>   Fees Details
+          <i class="bi bi-clipboard"></i>   FEES
           </Link>
         </li>
 
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#down">
-                  <i class="bi bi-envelope"></i>    Contact us
-                  </a>
+                  <Link class="nav-link mx-lg-2" to="#down">
+                  <i class="bi bi-envelope"></i>    CONTACT US
+                  </Link>
                 </li>
 
                 
                 <li class="nav-item">
                   <a class="nav-link mx-lg-2" href="">
-                  <i class="bi bi-bell"></i>  Notification
+                  <i class="bi bi-bell"></i>  NOTIFICATION
                   </a>
                 </li>
               </ul>
@@ -85,7 +109,10 @@ export default function Bar()
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
+        
       </nav>  
+      </div>
+      <Running/>
           
     </>
    )

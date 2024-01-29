@@ -1,0 +1,138 @@
+
+
+.contact-info {
+    width: 50%;
+    background-color: #ffea4e;
+  }
+  
+  .contact-info-item {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  .contact-info-icon {
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .contact-info-icon i {
+    font-size: 30px;
+    line-height: 70px;
+  }
+  
+  .contact-info-content {
+    margin-left: 20px;
+  }
+  
+  .contact-info-content h4 {
+    color: #1da9c0;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info-content p {
+    color: #FFF;
+    font-size: 1em;
+  }
+  
+  .contact-forms {
+    background-color: #fff;
+    padding: 10px;
+    width: 90%;
+    padding-bottom: 6px;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  .contact-forms h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 1px;
+    color: #333;
+  }
+  
+  .contact-forms .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .contact-forms .input-box input,
+  .contact-forms .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  
+  .contact-forms .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  
+  .contact-forms .input-box input:focus ~ span,
+  .contact-forms .input-box textarea:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  
+  .contact-forms .input-box input[type="submit"]
+  {
+    width: 100%;
+    background: #00bcd4;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #00bcd4;
+    transition: 0.5s;
+  }
+  
+  .contact-forms .input-box input[type="submit"]:hover
+  {
+    background: #FFF;
+    color: #00bcd4;
+  }
+  @media screen and (max-width:768px) 
+  {
+    .firsthalfs
+    {
+        margin-left: 10px;
+    }
+    .firsthalfs img
+    {
+        margin-left: 19px;
+    }
+    .contact-forms {
+        background-color: #fff;
+        padding: 10px;
+        width: 80%;
+       margin-left: 40px;
+      }
+     
+      .secondhalfs h1
+      {
+        margin-left: 66px;
+      }
+      #m
+      {
+        display:none;
+      }
+      
+  }
+  
