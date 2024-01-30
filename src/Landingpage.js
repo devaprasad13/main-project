@@ -311,6 +311,76 @@ export default function Landingpages()
               </table>
             </Accordion.Body>
           </Accordion.Item>
+
+          <Accordion.Item eventKey="6">
+            <Accordion.Header>Route:10 Alandurai</Accordion.Header>
+            <Accordion.Body>
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th
+                      scope="col"
+                      style={{ backgroundColor: "#42bcf5", color: "black" }}
+                    >
+                      Timing
+                    </th>
+                    <th
+                      scope="col"
+                      style={{ backgroundColor: "#42bcf5", color: "black" }}
+                    >
+                      Routes
+                    </th>
+                    <th
+                      scope="col"
+                      style={{ backgroundColor: "#42bcf5", color: "black" }}
+                    >
+                      Bus Cordinator
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>7.00AM</td>
+                    <td> Alandurai</td>
+                    <td>Pushpalatha M (A.P)</td>
+                  </tr>
+
+                  <tr>
+                    <td>7.15AM</td>
+                    <td>Thondamuthur</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>7.25AM</td>
+                    <td>Madhampetti</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>7.40AM</td>
+                    <td>Perur</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>7.55AM</td>
+                    <td>Kovaipudhur</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>8.15AM</td>
+                    <td>Madhukkarai</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>8.35AM</td>
+                    <td>KCE</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </Accordion.Body>
+          </Accordion.Item>
         </Accordion>
       </Col>
       <Col xs={12} md={6}>
@@ -458,7 +528,7 @@ export default function Landingpages()
           </Accordion.Item>
 
           <Accordion.Item eventKey="4">
-            <Accordion.Header>Route:6 Palladam</Accordion.Header>
+            <Accordion.Header>Route:4 Palladam</Accordion.Header>
             <Accordion.Body>
               <table class="table table-bordered table-striped">
                 <thead>
@@ -528,7 +598,7 @@ export default function Landingpages()
           </Accordion.Item>
 
           <Accordion.Item eventKey="5">
-            <Accordion.Header>Route:8 TPR Old Bus Stand</Accordion.Header>
+            <Accordion.Header>Route:6 TPR Old Bus Stand</Accordion.Header>
             <Accordion.Body>
               <table class="table table-bordered table-striped">
                 <thead>
@@ -598,7 +668,7 @@ export default function Landingpages()
           </Accordion.Item>
 
           <Accordion.Item eventKey="6">
-            <Accordion.Header>Route:9 Alandurai</Accordion.Header>
+            <Accordion.Header>Route:10 Alandurai</Accordion.Header>
             <Accordion.Body>
               <table class="table table-bordered table-striped">
                 <thead>

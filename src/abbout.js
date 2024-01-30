@@ -94,13 +94,15 @@ export default function Abbout()
       <span style={{
         fontSize: '2rem',
         fontWeight: 'bold',
+        color:'black',
 
       }}>TRANSPORT <span class="our" style={{
         color: '#f56f42',
       }}>FOR EVERYONE</span></span>
       <p style={{
           fontSize: '1.1rem',
-          marginTop:'25px'
+          marginTop:'25px',
+          color:'black'
       }}>
 
         Welcome to <b>KARPAGAM COLLEGE OF ENGINEERING </b>Transport Services, where convenience meets safety on the journey to academic excellence. Our commitment is to provide reliable and efficient transportation solutions for the vibrant community of students at KARPAGAM COLLEGE. As an integral part of campus life, we strive to enhance the overall student experience by ensuring seamless and secure travel.

@@ -10,7 +10,7 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App'
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Running from './run';
-
+import Zo from './mp';
 // ..
 AOS.init();
 const root = ReactDOM.createRoot(document.getElementById('root'));

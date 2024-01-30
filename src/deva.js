@@ -4,18 +4,20 @@ import pho from './ioo.PNG'
 import hel from './45454.jpg'
 import { useNavigate } from 'react-router-dom';
 import Rules from './rules';
+import Zo from './mp';
 export default function Miniland()
 {
   const navigate = useNavigate();
     return (
         <>
-            <nav>
+        <div class='nil'>
+            <nav class="navbar fixed-top">
     <div class="navbar">
       <div class="logo">
         <img id="#logo" src={pho} style={
           {
             width:'70px',
-           marginLeft:'-20px',
+           marginLeft:'-4px',
            
           }
         }>
@@ -44,11 +46,8 @@ export default function Miniland()
       </ul>
     </div>
   </nav>
-  <div id="Home" class='d1'  >
-    
-    <div  class='homi'   style={{fontFamily: 'Helvetica sans-serif',}}> WELCOME !</div>
-   
   </div>
+<Zo/>
 
    <div class='d44'  style={{
     background:'white'

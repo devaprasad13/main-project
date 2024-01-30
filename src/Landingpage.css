@@ -85,7 +85,8 @@ nav .navbar .menu{
   padding-top:8%;
   padding-left: 10%;
   padding-right: 10%;
-  background-color:#ffffff;
+  background: white;
+   
   border-top: 2px solid #333;
 }
 
@@ -98,8 +99,13 @@ nav .navbar .menu{
   padding-right: 10%;
   padding-bottom:18%;
    background-color:#ffffff;
-   border-top: 2px solid #333;
-   background-image: linear-gradient(to top, #ebc0fd 0%, #d9ded8 100%);
+   background: #2193b0;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+   
+
+   
 }
 
 #About{

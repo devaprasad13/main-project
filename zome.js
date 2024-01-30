@@ -5,85 +5,37 @@ export default function Zome()
 {
     return(
         <>
-             <nav>
-    <div class="navbar">
-      <div class="logo">
-        <img src={pho} style={
-          {
-            width:'170px',
-           marginLeft:'-80px',
-        
-          }
-        }>
-        
-        </img>
-      </div>
-      <ul class="menu">
-       
-        <li><a href="#Feedback" style={
-          {
-            background:'#29add9',
-            borderRadius:'10px',
-            padding:'10px 20px 10px 20px',
-             marginTop:'200px',
-            marginRight:'-12px'   ,       }
-        }>Login</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div id="Home" class='d1'>Transport
-  </div>
-  <section id="About">About Section</section>
-  <section id="Category">Category Section</section>
-  <section id="Contact">Contact Section</section>
-
-  
-  <div class='d4'>
-       <div class='firsthalf'>
-        <strong>
-               <img src={pho} style={
-                {
-                  width:'20em',
-                }
-               }></img>
-               <br></br>
-
-
-        </strong>
-        <div class="d-flex">
-                    <i class="bi bi-geo-alt-fill"></i>
-                    <p > Myleripalayam Village, Othakkal Mandapam, Tamil Nadu 641032</p>
-                  </div>
-                  <div class="d-flex">
-                    <i class="bi bi-telephone-fill"></i>
-                    <p>Contact :- +91 – 422 2619005</p>
-                  </div>
-                  <div class="d-flex">
-                    <i class="bi bi-envelope-fill"></i>
-                    <p>Email:- kcetransport@gmail.com</p>
-                  </div>
-                  <div class="d-flex">
-                    <i class="bi bi-browser-chrome"></i>
-                    <p>Website: www.karpagam college of Engineering.com</p>
-                  </div>
-              </div>
-            
-
-       <div class='secondhalf'>
-       <strong>
-             <h1>Get in Connect</h1>
-        </strong>
-        <div class="d-flexs">
-                    <p > Please Login</p>
-                  </div>
-                  <div class="d-flex">
-                    <a>Click Here</a>
-                  </div>
-                  
-               </div>
-   </div>
-   
-
+      <div class="section__container header__container" id="home">
+        <h1>No Matter Where You Are Going From, We Take You There</h1>
+        <p>
+          You do not have the right to remain silent. Let us know what it takes
+          to challenge you
+        </p>
+        <div class="booking">
+          <div class="booking__type" id="booking-type">
+            <div class="active">One Way</div>
+            <div>Round Trip</div>
+            <div>Multi City</div>
+          </div>
+          <form action="/" class="booking__form">
+            <div class="booking__input">
+              <label for="arrival">To</label>
+              <input type="text" placeholder="Arrival" />
+            </div>
+            <div class="booking__input">
+              <label for="departure">From</label>
+              <input type="text" placeholder="Departure" />
+            </div>
+            <div class="booking__input">
+              <label for="date">Date</label>
+              <input type="text" placeholder="Date" />
+            </div>
+          </form>
+          <div class="booking__btn">
+            <button class="btn">Book Now</button>
+          </div>
+        </div>
+</div>
        </>
     )
    
