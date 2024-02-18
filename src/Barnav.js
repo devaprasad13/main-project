@@ -14,7 +14,7 @@ export default function Bar()
         <img id="#logo" src={po} style={
           {
             width:'70px',
-           marginLeft:'-10px',
+          
            
           }
         }>
@@ -60,7 +60,7 @@ export default function Bar()
               ></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                 <li class="nav-item" >
                   <Link
                     class="nav-link mx-lg-2 "
@@ -90,9 +90,22 @@ export default function Bar()
                 
                 <li class="nav-item">
                   <a class="nav-link mx-lg-2" href="">
-                  <i class="bi bi-bell"></i>  NOTIFICATION
+                  <i class="bi bi-bell"></i>NOTIFY
                   </a>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link mx-lg-1 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-person-circle"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="navbarDropdown">
+                      <li><Link class="dropdown-item" to="/prof"><span style={{ fontFamily: "'Exo 2', sans-serif" }}>Profile</span></Link></li>
+                   
+                      <li><a class="dropdown-item" href="#" style={{ fontFamily: "'Exo 2', sans-serif" }}>Report</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><Link class="dropdown-item" to="/" style={{ fontFamily: "'Exo 2', sans-serif" }}>Logout &nbsp; &nbsp; <i class="bi bi-box-arrow-right"></i> </Link></li>
+                    </ul>
+                  </li>
               </ul>
             </div>
           </div>

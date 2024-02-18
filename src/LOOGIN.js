@@ -27,7 +27,7 @@ export default function LOGIN()
 <div class="col-md-6 right-box ">
    <div class="row align-items-center ">
          <div class="header-text mb-4">
-              <h2>STUDENT LOGIN</h2>
+              <h2>USER LOGIN</h2>
               
          </div>
          <div class="input-group mb-3">
@@ -49,7 +49,7 @@ export default function LOGIN()
              <button class="btn btn-lg btn-primary w-100 fs-6"  onClick={()=>navigate('/land') } >Login</button>
          </div>
          <div class="input-group mb-3">
-             <button class="btn btn-lg btn-light w-100 fs-6"><img src="" style={{width:"20px"}} class="me-2"/><small>Sign In with Google</small></button>
+             <button class="btn btn-lg btn-light w-100 fs-6"><img src="" style={{width:"20px"}} class="me-2"/><small><i class='bx bxl-google'></i> Sign In with Google</small></button>
          </div>
          <div class="row">
              <small>Don't have account? send Request <a href="#">Contact us</a></small>

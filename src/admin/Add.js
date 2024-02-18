@@ -37,10 +37,10 @@ export default function ADD()
         </li>
 
         <li>
-            <a to="/deva">
+            <Link to="/rot">
             <i class='bx bxs-bus' ></i>
                 <span class="text">Bus Routes</span>
-            </a>
+            </Link>
         </li>
         <li>
             <a href="#">

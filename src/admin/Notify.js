@@ -37,10 +37,10 @@ export default function NOTIFY()
         </li>
 
         <li>
-            <a to="/deva">
+            <Link to="/deva">
             <i class='bx bxs-bus' ></i>
                 <span class="text">Bus Routes</span>
-            </a>
+            </Link>
         </li>
         <li>
             <a href="#">

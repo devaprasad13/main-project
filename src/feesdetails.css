@@ -94,17 +94,18 @@ nav .navbar .menu{
   color: #96c7e8;
   font-size: 70px;
   font-weight: 30px;
-  background: blueviolet;
+  background: rgb(0, 0, 0);
   border-top: 2px solid #333;
 }
 .d77
 {
 
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   padding: 100px 5% 4px;
     border-top: 2px solid #333;
     color:#777;
+    background-color: white;
 }
 .vl{
 
@@ -566,5 +567,9 @@ color:white
   #hea
   {
     font-size: 30px;
+  }
+  .d44
+  {
+    height: auto;
   }
 }

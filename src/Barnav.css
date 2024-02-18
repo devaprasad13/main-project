@@ -88,7 +88,13 @@ nav{
     font-family: 'Exo 2', sans-serif;
    
  
+    
   }
+ a.dropdown-item 
+ {
+  transition: transform .2s;
+ }
+ 
   @keyframes move-words {
     0% {
       left: 100%;

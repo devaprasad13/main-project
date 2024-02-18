@@ -1,0 +1,74 @@
+
+.bac
+{
+    background: #FF512F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ height: 100vh;
+ padding-top: 15px;
+ width: 100%;
+
+}
+.het
+{
+    width:'100%';
+  
+    background-color:#f2f6fc;
+    color:#69707a;
+    
+    }
+    .img-account-profile {
+        height: 10rem;
+    }
+   #pho {
+        border-radius: 50% !important;
+    }
+    #pe{
+        box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+    }
+   
+    .card-headersss:first-child {
+        border-radius: 0.35rem 0.35rem 0 0;
+    }
+    .card-headersss {
+        padding: 1rem 1.35rem;
+        margin-bottom: 0;
+        background-color: rgba(33, 40, 50, 0.03);
+        border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+     
+        font-weight: 700;
+        letter-spacing: 1.5px;
+    }
+  
+ 
+    .form-controlss, .dataTable-input {
+        display: block;
+        width: 100%;
+        padding: 0.875rem 1.125rem;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1;
+        color: #69707a;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #c5ccd6;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0.35rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+          
+    }
+    
+    @media screen and (max-width:768px)
+    {
+        .bac
+        {
+              height: auto;
+
+        }
+        #mat
+        {
+            margin-top: 17px;
+        }
+    }

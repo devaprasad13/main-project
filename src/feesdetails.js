@@ -5,9 +5,12 @@ import './feesdetails.css'
 import Her from './dummy'
 import pi from './io.jpg'
 import { Link } from 'react-router-dom';
+import Feel from './fee'
 export default function Fee()
 {
- 
+  const top =()=>  {
+    window.scrollTo(0,0);
+  }
     return (
         <>
           <Bar/> 
@@ -52,121 +55,11 @@ export default function Fee()
       alignItems:'center',
       fontWeight:'500'
      }}>Fees Details</h5></div>
+  <Feel/>
+        
+    </div>
 
-
-<div data-aos="fade-up" data-aos-duration="1000">
-          <section class="sectioning__container booking__container">
-            <div class="booking__nav">
-              <span
-                style={{
-                  fontWeight: "bold",
-                }}
-              >
-                {" "}
-                <i class="bi bi-bus-front-fill"></i> Search your Bus Fair
-              </span>
-            </div>
-            <form>
-              <div class="form__group">
-                <div class="input__content">
-                  <div class="input__group">
-                    <input type="text" />
-                    <label>
-                      
-                      <i class="bi bi-geo-alt-fill"></i> From
-                    </label>
-                  </div>
-                  <p>Where are you going?</p>
-                </div>
-              </div>
-              <div class="form__group">
-                <div class="input__content">
-                  <div class="input__group">
-                    <input type="number" />
-                    <label>
-                      <i class="bi bi-geo-alt-fill"></i> To
-                    </label>
-                  </div>
-                  <p>KCE</p>
-                </div>
-              </div>
-              <div class="form__group">
-                <div class="input__content">
-                  <div class="input__group">
-                    <input type="text" />
-                    <label>
-                      <i class="bi bi-bus-front-fill"></i> Bus No:
-                    </label>
-                  </div>
-                  <p>Add BusNO:</p>
-                </div>
-              </div>
-
-              <button class="btns">
-                <i class="bi bi-search"></i> Search
-              </button>
-            </form>
-          </section>
-        </div>
-
-  </div>
-   <div class='buspass'>
-   <div data-aos="zoom-in" data-aos-duration="1000" > <h5 style={{
-      fontSize:'50px',
-   
-      fontFamily: 'Helvetica sans-serif',
-      color:'#0b0a0d',
-      textAlign:'center',
-      alignItems:'center',
-      fontWeight:'500'
-     }}>Bus Pass</h5></div>
-
-<div class="position-relative">
-		<div>
-			<div class="home-banner"></div>
-		</div>
-
-		<div class="input-search-container">
-			<form class="d-flex justify-content-center">
-				<div class="d-inline-block position-relative">
-					<span class="inputIcon"><i class="far fa-building"></i></span>
-					<label class="inputLabel-default" for="input-label-from">FROM</label>
-					<input id="input-label-from" class="inputForm" type="text" list="input-from-list"/>
-					<datalist id="input-from-list">
-            
-					</datalist>
-				</div>
-
-				<div class="d-inline-block position-relative">
-					<span class="inputIcon"><i class="far fa-building"></i></span>
-					<label class="inputLabel-default" for="input-label-to">TO</label>
-					<input id="input-label-to" class="inputForm" type="text" list="input-to-list"/>
-					<datalist id="input-to-list">
-					
-					</datalist>
-				</div>
-
-				<div class="d-inline-block position-relative">
-					<span class="inputIcon"><i class="fas fa-calendar-alt"></i></span>
-					<label class="inputLabel-default" for="input-label-onward-date">ONWARD DATE</label>
-					<input id="input-label-onward-date" class="inputForm" type="text"/>
-				</div>
-
-				<div class="d-inline-block position-relative">
-					<span class="inputIcon"><i class="fas fa-calendar-alt"></i></span>
-					<label class="inputLabel-default" for="input-label-return-date">RETURN DATE</label>
-					<input id="input-label-return-date" class="inputForm" type="text"/>
-				</div>
-
-				<div class="d-inline-block position-relative">
-					<input class="btn btn-danger rounded-0 pl-3 pr-3 pb-2" type="submit" value="Search Buses"/>
-				</div>
-			</form>
-		</div>
-	</div>
-  </div>
- 
-  <div class='d44'   style={{
+     <div class='d44'   style={{
     background:'white'
   }}>
        <Her/>
@@ -185,7 +78,7 @@ export default function Fee()
     }>
           Copyright <i class="bi bi-c-circle"></i> 2024 Karpagam College Of Engineering. All Rights Reserved.
       </strong>  
-    
+ 
    </div>
         
         </>

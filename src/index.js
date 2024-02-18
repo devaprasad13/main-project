@@ -11,15 +11,18 @@ import App from './App'
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Running from './run';
 import Zo from './mp';
+import Feel from './fee';
+import ProfilePhot from './profile';
 // ..
 AOS.init();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <BrowserRouter>
   <React.StrictMode>
-   <App/>
+  <App/>
   </React.StrictMode>
   </BrowserRouter>
+ 
   
  
 );

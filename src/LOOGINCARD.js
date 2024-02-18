@@ -23,19 +23,10 @@ export default function CARD()
             <Image style={{width:'12em',marginLeft:'-18px'}} src='https://cdn0.iconfinder.com/data/icons/kameleon-free-pack-rounded/110/Student-3-512.png'></Image>
           </div>
         </div>
-        <div class="text">Student</div>
+        <div class="text">User</div>
         <Button variant="dark"  style={{marginTop:'5%',marginLeft:'2%',fontWeight:"500"}} onClick={()=>navigate('/log') }>Login</Button>
       </div>
-      <div class="card js"  data-aos="fade-down" data-aos-duration="1000">
-        <div class="circle">
-          <div class="bar"></div>
-          <div class="box">
-          <Image style={{width:'12em',marginLeft:'-18px'}} src='https://cdn2.iconfinder.com/data/icons/school-flat-circle/512/Guy_hipster_jumper_man_teacher_sir-512.png'></Image>
-          </div>
-        </div>
-        <div class="text">Faculty</div>
-        <Button variant="dark"   style={{marginTop:'5%',marginLeft:'2%',fontWeight:"500"}} onClick={()=>navigate('/logf') }>Login</Button>
-      </div>
+    
       <div class="card react" data-aos="fade-up-left" data-aos-duration="1000">
         <div class="circle">
           <div class="bar"></div>

@@ -11,6 +11,7 @@
     background:linear-gradient(rgba(18, 66, 117, 0.7),rgba(9, 7, 70, 0.7)),url(back.jpg);
     background-position: bottom;
     background-size: cover;
+    scroll-behavior: smooth;
 }
 .box-area{
     width: 930px;
@@ -48,6 +49,10 @@ background: linear-gradient(128deg, rgba(36,91,90,1) 0%, rgba(35,118,155,1) 0%, 
      }
      .right-box{
         padding: 20px;
+     }
+     .hell
+     {
+        scroll-behavior: smooth;
      }
 
 }

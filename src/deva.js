@@ -5,9 +5,17 @@ import hel from './45454.jpg'
 import { useNavigate } from 'react-router-dom';
 import Rules from './rules';
 import Zo from './mp';
+
+import { useState,useEffect } from 'react';
 export default function Miniland()
 {
   const navigate = useNavigate();
+
+  const top =()=>  {
+    window.scrollTo(0,0);
+  }
+
+
     return (
         <>
         <div class='nil'>
@@ -25,19 +33,20 @@ export default function Miniland()
         </img>
        
       </div>
+      
       <span class = "kk" style={
           {
             color:'black',
             letterSpacing:'2px',
             fontSize:'170%',
             fontWeight:'bold',
-            marginTop:"9px",
+            marginTop:"8px",
            fontFamily:'Zilla Slab serif',
           
             
 
           }
-        }>KCE TRANSPORT</span>
+        }>KCE TRANSPORT &nbsp; &nbsp;</span>
       <div class='all'></div>
       <ul class="menu">
        
@@ -113,7 +122,7 @@ export default function Miniland()
     }>
           Copyright <i class="bi bi-c-circle"></i> 2024 Karpagam College Of Engineering. All Rights Reserved.
       </strong>  
-    
+    <button onClick={top} id="scrollbt"><i class="bi bi-arrow-up-circle-fill"></i></button>
    </div>
         </>
     )

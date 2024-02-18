@@ -12,6 +12,8 @@ import Dash from './admin/Dash';
 import ADD from "./admin/Add";
 import NOTIFY from "./admin/Notify";
 import Fee from "./feesdetails";
+import Rotes from "./admin/Routes";
+import ProfilePhot from "./profile";
 export default function App() {
   return (
    <>
@@ -27,6 +29,10 @@ export default function App() {
            <Route path='/not' element={<NOTIFY/>}></Route>
            <Route path='/user' element={<ADD/>}></Route>
            <Route path='/ad' element={<ADMIN/>}></Route>
+           <Route path='/rot' element={<Rotes/>}></Route>
+           <Route path='/prof' element={<ProfilePhot/>}></Route>
+
+           
      </Routes>
    
    </>

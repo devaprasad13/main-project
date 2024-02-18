@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 25px;
   background:linear-gradient(rgba(18, 66, 117, 0.7),rgba(9, 7, 70, 0.7)),url(back.jpg);
   background-position: bottom;
   background-size: cover;

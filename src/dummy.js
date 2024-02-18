@@ -127,6 +127,42 @@ export default function Her()
                </div>
   
           </Col>
+          <Col >
+
+<div class='secondhalfs' data-aos="fade-left"  data-aos-duration="1000">
+   <h1 style={{
+    paddingLeft:'10px',
+    fontWeight:'700'
+   }}>Transport Office</h1>
+
+<div id="m" style={
+  {
+    width: '250px',
+    height: '2px',
+    backgroundColor:'skyblue' ,
+    marginTop:'2px',
+    marginLeft:'2em',
+ borderRadius: '2px',
+
+  }
+}></div>
+ <div style={{marginTop:'20px'}} class='transport'>
+                  <div class="d-flex">
+                  <i class="bi bi-person-circle"></i>
+                    <p>Manager :- KalavathiJebaselvi</p>
+                  </div>
+                  <div class="d-flex">
+                  <i class="bi bi-telephone-fill"></i>
+                    <p>Contact:- 78458 xxxxx</p>
+                  </div>
+                  <div class="d-flex">
+                    <i class="bi bi-envelope-fill"></i>
+                    <p>Email:- kcetransport@gmail.com</p>
+                  </div>
+                  </div>
+</div>
+
+</Col>
         </Row>
       
      

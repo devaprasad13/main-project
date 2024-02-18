@@ -40,10 +40,10 @@ export default function Dash()
         </li>
 
         <li>
-            <a href="/deva">
+            <Link href="/rot">
             <i class='bx bxs-bus' ></i>
                 <span class="text">Bus Routes</span>
-            </a>
+            </Link>
         </li>
         <li>
             <a href="#">
