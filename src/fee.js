@@ -8,7 +8,7 @@ export default function Feel()
         <>
        
    
-      <div class="section__contain header__contain" id="home" data-aos="fade-up"  data-aos-duration="1000">
+      <div class="section__contain header__contain" id="home" >
         <div class="booki" >
           <div class="booki__type" id="booking-type" >
             <div class="active"  style={{color:'black',fontWeight:'600',}}>Search Bus Fare Here</div>
