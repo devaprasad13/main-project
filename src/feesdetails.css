@@ -102,7 +102,7 @@ nav .navbar .menu{
 
   height: 90vh;
   width: 100%;
-  padding: 100px 5% 4px;
+  padding: 50px 5% 4px;
     border-top: 2px solid #333;
     color:#777;
     background-color: white;
@@ -571,5 +571,9 @@ color:white
   .d44
   {
     height: auto;
+  }
+  .d77
+  {
+    height:auto;
   }
 }
