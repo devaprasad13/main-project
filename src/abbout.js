@@ -20,7 +20,7 @@ export default function Abbout()
           <section id="heros">
     <div class="heros-container" data-aos="fade-up" data-aos-duration="1000">
       <h1>Transport</h1>
-      <a href="#about" class="btn-get-started scrollto" >About us<i class="bi bi-arrow-down"></i></a>
+      <a href="#abo" class="btn-get-started scrollto" >About us<i class="bi bi-arrow-down"></i></a>
     </div>
   </section>
   </div>

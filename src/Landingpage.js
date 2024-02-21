@@ -19,7 +19,7 @@ export default function Landingpages()
   <section id="hero">
     <div class="hero-container" data-aos="fade-up" data-aos-duration="1000">
       <h1>Your Safety Our Responsibility</h1>
-      <a href="#about" class="btn-get-started scrollto">View Routes <i class="bi bi-arrow-down"></i></a>
+      <a href="#rot" class="btn-get-started scrollto">View Routes <i class="bi bi-arrow-down"></i></a>
     </div>
   </section>
   </div>

@@ -18,7 +18,7 @@ export default function Fee()
           <section id="heros">
     <div class="heros-container" data-aos="fade-up" data-aos-duration="1000">
       <h1>Transport</h1>
-      <a href="#about" class="btn-get-started scrollto" >Fees Details<i class="bi bi-arrow-down"></i></a>
+      <a href="#fessd" class="btn-get-started scrollto" >Fees Details<i class="bi bi-arrow-down"></i></a>
     </div>
   </section>
   </div>
