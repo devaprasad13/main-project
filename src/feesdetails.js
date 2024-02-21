@@ -15,8 +15,8 @@ export default function Fee()
         <>
           <Bar/> 
           <div>  
-          <section id="heros">
-    <div class="heros-container" data-aos="fade-up" data-aos-duration="1000">
+          <section id="heroe">
+    <div class="heroe-container" data-aos="fade-up" data-aos-duration="1000">
       <h1>Transport</h1>
       <a href="#fessd" class="btn-get-started scrollto" >Fees Details<i class="bi bi-arrow-down"></i></a>
     </div>

@@ -97,7 +97,7 @@ a.active
 #heros {
   width: 100%;
   height: 100vh;
-  background: url("ie.jpg") top center;
+  background: url("profile.jpg")  center;
   background-size: cover;
   position: relative;
 }
