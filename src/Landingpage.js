@@ -14,24 +14,14 @@ export default function Landingpages()
     return(
         <>
   <Bar/> 
-  <div id="Home" class='d15'>
-  <div class='header-contentss'  data-aos="zoom-in" data-aos-duration="1000">
-
-            
-<h7  class='sac'style={{
-   fontFamily: 'Helvetica sans-serif',
-}}>TRANSPORT</h7>
-<div class='lines'></div>
-<a  id='touchs' href="#rot" style={
-  {
-    marginLeft:'95px',
-    paddingLeft:'20px',
-    paddingTop:'10px',
-    paddingBottom:'10px',
-    fontFamily: 'Helvetica sans-serif',
-  }
-}><span>View Routes<i class="bi bi-chevron-double-right" style={{margin:'10px'}}></i></span></a>
-</div>
+  <div>
+   
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up" data-aos-duration="1000">
+      <h1>Your Safety Our Responsibility</h1>
+      <a href="#about" class="btn-get-started scrollto">View Routes <i class="bi bi-arrow-down"></i></a>
+    </div>
+  </section>
   </div>
 
 <div class='rol' id="rot">

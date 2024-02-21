@@ -13,6 +13,7 @@ import Running from './run';
 import Zo from './mp';
 import Feel from './fee';
 import ProfilePhot from './profile';
+import Hom from './ind';
 // ..
 AOS.init();
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,7 @@ root.render(
   <App/>
   </React.StrictMode>
   </BrowserRouter>
+
  
   
  

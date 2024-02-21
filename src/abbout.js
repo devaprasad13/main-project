@@ -16,39 +16,13 @@ export default function Abbout()
         <><div>
           <Bar/> 
           </div>
-        
-        
-      
-  <div id="Home" class='d11'>
-  
-  <div class='header-contentss'  data-aos="zoom-in" data-aos-duration="1000">
-
-            
-<h7 class='met' style={{
-   fontFamily: 'Helvetica sans-serif',
-}}>TRANSPORT</h7>
-<div class='lines'></div>
-<div class="left">
-               
-                <ul class="breadcrumb" style={
-                  {
-                    fontSize:'25px',
-                  paddingTop:'30px',
-                  marginLeft:'90px',
-                  fontFamily: 'Helvetica sans-serif',
-                  }
-                }>
-                    <li>
-                        <Link to="/land" class="pinky">Home</Link>
-                    </li>
-                    <li><i class='bx bx-chevron-right' style={{fontSize:'30px',paddingTop:'5px'}} ></i></li>
-                    <li>
-                        <a class="active" href="#abo">About us</a>
-                    </li>
-                </ul> 
-            </div>
-  
-   </div>
+      <div>  
+          <section id="heros">
+    <div class="heros-container" data-aos="fade-up" data-aos-duration="1000">
+      <h1>Transport</h1>
+      <a href="#about" class="btn-get-started scrollto" >About us<i class="bi bi-arrow-down"></i></a>
+    </div>
+  </section>
   </div>
 
   <div  class='d7' id='abo'>

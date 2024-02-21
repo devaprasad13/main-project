@@ -94,6 +94,95 @@ a.active
   background: blueviolet;
   border-top: 2px solid #333;
 }
+#heros {
+  width: 100%;
+  height: 100vh;
+  background: url("ie.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+#heros:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#heros .heros-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#heros h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: 'Exo 2', sans-serif;
+}
+
+#heros h2 {
+  color: #eee;
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+
+#heros .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #8fc04e;
+  color: #fff;
+}
+
+#heros .btn-get-started:hover {
+  background: #8fc04e;
+}
+
+@media (min-width: 1024px) {
+  #heros {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #heros {
+    height: 100vh;
+  }
+
+  #heros h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  #heros h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
 .d7
 {
 
