@@ -25,13 +25,13 @@ export default function Fee()
 
   <div  class='d77' id="fessd">
  <div data-aos="zoom-in" data-aos-duration="1000" > <h5 style={{
-      fontSize:'60px',
+      fontSize:'50px',
    
       fontFamily: 'Helvetica sans-serif',
       color:'#0b0a0d',
       textAlign:'center',
       alignItems:'center',
-      fontWeight:'500'
+      fontWeight:'300'
      }}>Fees Details</h5></div>
   <Feel/>
         

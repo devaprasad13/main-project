@@ -14,6 +14,9 @@ import NOTIFY from "./admin/Notify";
 import Fee from "./feesdetails";
 import Rotes from "./admin/Routes";
 import ProfilePhot from "./profile";
+import View from "./admin/view";
+import Update from "./admin/userup";
+
 export default function App() {
   return (
    <>
@@ -31,10 +34,14 @@ export default function App() {
            <Route path='/ad' element={<ADMIN/>}></Route>
            <Route path='/rot' element={<Rotes/>}></Route>
            <Route path='/prof' element={<ProfilePhot/>}></Route>
+           <Route path='/view' element={<View/>}></Route>
+           <Route path='/up/:id' element={<Update/>}></Route>
+           
 
            
+           
      </Routes>
-   
+    
    </>
   );
 }

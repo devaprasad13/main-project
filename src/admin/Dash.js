@@ -33,10 +33,10 @@ export default function Dash()
             </Link>
         </li>
         <li>
-            <a href="#">
+            <Link to="/view">
             <i class='bx bxs-group'></i>
                 <span class="text">View Users</span>
-            </a>
+            </Link>
         </li>
 
         <li>

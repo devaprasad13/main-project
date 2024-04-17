@@ -1,10 +1,32 @@
 
 import { Link } from 'react-router-dom'
 import Button from 'react-bootstrap/Button';
+import { useNavigate} from "react-router-dom"
 import './Add.css'
-
+import { useState } from 'react';
+import axios from 'axios';
 export default function ADD()
 {
+    const[name,setName] = useState()
+    const[email,setEmail] = useState()
+    const[password,setPassword] = useState()
+    const[roll,setRoll] = useState()
+    const[year,setYear] = useState()
+    const[role,setRole] = useState()
+    const[phone,setPhone] = useState()
+    const[bus,setBus] = useState()
+    const[boarding,setBoarding] = useState()
+   
+
+    const Submit = (e)=>
+    {
+       
+        axios.post("http://localhost:3001/user",{name,email,password,roll,year,role,phone,bus,boarding})
+        .then(result=> console.log(result))
+        .then(res=>alert("Created Successfully"))
+        .catch(err => console.log(err))
+      
+    }
     return (
         <>
        <body>
@@ -30,10 +52,10 @@ export default function ADD()
             </Link>
         </li>
         <li>
-            <a href="#">
+            <Link to="/view">
             <i class='bx bxs-group'></i>
                 <span class="text">View Users</span>
-            </a>
+            </Link>
         </li>
 
         <li>
@@ -121,7 +143,8 @@ export default function ADD()
         </div>
              
              <div class='usering'>
-                <form>
+                <form onSubmit={Submit}>
+                
                    <table style={
                     {
                     
@@ -135,6 +158,7 @@ export default function ADD()
 
                     }
                    }>
+                    <tr><td><p class="title">Add User</p></td></tr>
                        <tr>
                        
                           <td style={
@@ -156,10 +180,33 @@ export default function ADD()
                                 lineHeight: '2em',
                              
                             }
-                          } ><input type='text' class='het'></input></td>
+                          } ><input type='text' class='het' onChange={(e)=>setName(e.target.value)}></input></td>
                        </tr>
-
                        <tr>
+                       
+                       <td style={
+                         {
+                             paddingLeft: '45px',
+                             paddingTop: '10px',
+                             fontWeight: '900',
+                             lineHeight: '2em',
+                          
+                         }
+                       }>Email:</td>
+                       </tr>
+                       <tr>
+                       <td style={
+                         {
+                             paddingLeft: '45px',
+                             paddingTop: '10px',
+                             fontWeight: '900',
+                             lineHeight: '2em',
+                          
+                         }
+                       } ><input type='text' class='het' onChange={(e)=>setEmail(e.target.value)}></input></td>
+                    </tr>
+
+                    <tr>
                           <td style={
                             {
                                 paddingLeft: '45px',
@@ -168,8 +215,9 @@ export default function ADD()
                                 lineHeight: '2em',
                              
                             }
-                          }>Rollno:</td>
+                          }>Password:</td>
                           </tr>
+                      
                           <tr>
                           <td style={
                             {
@@ -179,9 +227,10 @@ export default function ADD()
                                 lineHeight: '2em',
                              
                             }
-                          }><input type='text' placeholder=' eg: 21F113' class='het'></input></td>
+                          }><input type='text'  placeholder='' class='het' onChange={(e)=>setPassword(e.target.value)}></input></td>
                        </tr>
 
+                    
                        <tr>
                           <td style={
                             {
@@ -202,7 +251,29 @@ export default function ADD()
                                 lineHeight: '2em',
                              
                             }
-                          }><input type='text' placeholder=' eg: I,II,III,IV' class='het'></input></td>
+                          }><input type='text' placeholder='' class='het' onChange={(e)=>setYear(e.target.value)}></input></td>
+                       </tr>
+                       <tr>
+                          <td style={
+                            {
+                                paddingLeft: '45px',
+                                paddingTop: '10px',
+                                fontWeight: '900',
+                                lineHeight: '2em',
+                             
+                            }
+                          }>Role:</td>
+                          </tr>
+                          <tr>
+                          <td style={
+                            {
+                                paddingLeft: '45px',
+                                paddingTop: '10px',
+                                fontWeight: '900',
+                                lineHeight: '2em',
+                             
+                            }
+                          }><input type='text' placeholder=' eg: I,II,III,IV' class='het'onChange={(e)=>setRole(e.target.value)}></input></td>
                        </tr>
 
                        <tr>
@@ -225,75 +296,56 @@ export default function ADD()
                                 lineHeight: '2em',
                              
                             }
-                          }><input type='text' class='het'></input></td>
+                          }><input type='number' class='het' onChange={(e)=>setPhone(e.target.value)}></input></td>
                        </tr>
-
                        <tr>
-                          <td style={
-                            {
-                                paddingLeft: '45px',
-                                paddingTop: '10px',
-                                fontWeight: '900',
-                                lineHeight: '2em',
-                             
-                            }
-                          }>Boarding:</td>
-                        </tr>
-                        <tr>
-                          <td style={
-                            {
-                                paddingLeft: '45px',
-                                paddingTop: '10px',
-                                fontWeight: '900',
-                                lineHeight: '2em',
-                             
-                            }
-                          }>
-                            <select style={
-                                {
-                                    lineHeight: '5em',
-    height: '35px',
-    width: '195px',
-    border: 'none',
-    bordeRadius: '3px',
-                                    
-                                }
-                            }>
-                               <option>Select</option>
-                                <option>Tiruppur NewBustand</option>
-                                <option>Tiruppur OldBustand</option>
-                                <option>Tiruppur Permanallur</option>
-                                <option>Avinashi</option>
-                                <option>Andipalayam</option>
-                                <option>Palladam</option>
-                                <option>Karanampet</option>
-                                <option>Mettupalayam</option>
-                                <option>Pollachi</option>
-                                <option>Udumalaipet</option>
-                                <option>Gandipuram</option>
-                                <option>Chitra</option>
-                                <option>KMCH</option>
-                                <option>Lakshmi Mills</option>
-                                <option>Ukkadam</option>
-                                <option>Kanuvai</option>
-                                <option>R.S.Puram</option>
-                                <option>Thudiyalur</option>
-                                <option>Saibaba Colony</option>
-                                <option>Sulur</option>
-                                <option>Kovaiputhur</option>
-                                <option>SivanadhaColony</option>
-                                <option>Ganapathi</option>
-                                <option>Vadavalli</option>
-                                <option>Vellalur</option>
-                                <option>KarunyaNagar</option>
-                                <option>Singanallur</option>
-                                <option>Pothanur</option>
-                                <option>RamanathaPuram</option>
-                                <option>TownHall</option>
-                                <option>Maruthamalai</option>
-                            </select>
-                          </td>
+                       
+                       <td style={
+                         {
+                             paddingLeft: '45px',
+                             paddingTop: '10px',
+                             fontWeight: '900',
+                             lineHeight: '2em',
+                          
+                         }
+                       }>Bus.no:</td>
                        </tr>
+                       <tr>
+                       <td style={
+                         {
+                             paddingLeft: '45px',
+                             paddingTop: '10px',
+                             fontWeight: '900',
+                             lineHeight: '2em',
+                          
+                         }
+                       } ><input type='text' class='het' onChange={(e)=>setBus(e.target.value)}></input></td>
+                    </tr>
+
+                    <tr>
+                       
+                       <td style={
+                         {
+                             paddingLeft: '45px',
+                             paddingTop: '10px',
+                             fontWeight: '900',
+                             lineHeight: '2em',
+                          
+                         }
+                       }>Boarding:</td>
+                       </tr>
+                       <tr>
+                       <td style={
+                         {
+                             paddingLeft: '45px',
+                             paddingTop: '10px',
+                             fontWeight: '900',
+                             lineHeight: '2em',
+                          
+                         }
+                       } ><input type='text' class='het' onChange={(e)=>setBoarding(e.target.value)}></input></td>
+                    </tr>
+                   
                        <tr>
                         <td style={
                             {

@@ -50,7 +50,7 @@ export default function Miniland()
       <div class='all'></div>
       <ul class="menu">
        
-        <li ><button  type="button"  id='colo'  onClick={()=>navigate('/card') }>Login</button>
+        <li ><button  type="button"  id='colo'  onClick={()=>navigate('/log') }>Login</button>
 </li>
       </ul>
     </div>

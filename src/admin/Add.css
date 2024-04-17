@@ -2,11 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 a {
     text-decoration: none;
@@ -47,10 +43,52 @@ body {
     background: var(--grey);
     overflow-x: hidden;
 }
+.title {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 85px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 50px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
 
 
-
-
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+}
 
 /* SIDEBAR */
 #sidebar {
