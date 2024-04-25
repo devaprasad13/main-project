@@ -37,8 +37,6 @@ export default function LOGIN()
              }
             })
         .catch(err => console.log(err))
-
-      
         
     }
     const [see,setsee] = useState();
@@ -77,7 +75,7 @@ export default function LOGIN()
          </div>
          <div class="input-group mb-1">
              <input type={see?"text":"password"} class="form-control form-control-lg bg-light fs-6" placeholder="Password" onChange={(e)=>setPassword(e.target.value)}/>
-             <label id="shows"onClick={show} style={{top:'1%',right:'7%',paddingTop:'12px'}}><i class="bi bi-eye-fill"></i></label>
+             <label id="shows"onClick={show} style={{top:'1%',right:'7%',paddingTop:'12px'}}>   {see? <i class="bi bi-eye-fill"></i> : <i class="bi bi-eye-slash-fill"></i>}</label>
          </div>
          <div class="input-group mb-5 d-flex justify-content-between">
              <div class="form-check">
