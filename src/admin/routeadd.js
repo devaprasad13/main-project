@@ -1,38 +1,53 @@
 
 import { Link } from 'react-router-dom'
-import { useNavigate, useParams } from "react-router-dom"
+import Button from 'react-bootstrap/Button';
+import { useNavigate} from "react-router-dom"
 import './Add.css'
 import { useState } from 'react';
 import axios from 'axios';
-export default function ADD()
+export default function Addroutes()
 {
-    const navigate = useNavigate()
-    const[name,setName] = useState()
-    const[email,setEmail] = useState()
-    const[password,setPassword] = useState('karpagam')
-    const[roll,setRoll] = useState()
-    const[year,setYear] = useState()
-    const[role,setRole] = useState()
-    const[phone,setPhone] = useState()
-    const[bus,setBus] = useState()
-    const[boarding,setBoarding] = useState()
+    const[from,setFrom] = useState('')
+    const[to,setTo] = useState("KCE")
+    const[bus,setBus] = useState('')
+    const[amount,setAmount] = useState('')
+    
    
 
-    const Submit = (e)=>
+    const Submit = async(e)=>
     {
-       
-        axios.post("http://localhost:3001/user",{name,email,password,roll,year,role,phone,bus,boarding})
-        .then(result=> console.log(result))
-        .then(res=>alert("Created Successfully"))
-        .catch(err => console.log(err))
-        navigate('/view')
+        e.preventDefault();
+        const routeData = {
+            from,
+            to,
+            bus,
+            amount: Number(amount), // Convert amount to a number
+        };
+        try{
+       const routing = await axios.post("http://localhost:3001/rou",routeData)
+
+       if(routing.status === 200)
+       {
+        alert("Route added Successfully")
+         setFrom('')
+         setTo('')
+         setBus('')
+         setAmount('')
+       }
+       else
+       {
+          console.log("Routes added Failed")
+       }
+    }
+    catch(error)
+    {
+        console.log("error")
+    }
+      
     }
     return (
         <>
        <body>
-
-
-
 <div id="sidebar">
     <a href="#" class="brand">
     <i class='bx bx-buildings'></i>
@@ -59,8 +74,8 @@ export default function ADD()
         </li>
 
         <li>
-            <Link to="/addroute">
-            <i class='bx bxs-bus' ></i>
+            <Link to="/Add">
+            <i class='bx bx-plus-medical'></i>
                 <span class="text">Add Routes</span>
             </Link>
         </li>
@@ -128,7 +143,7 @@ export default function ADD()
                 <h1>Add User</h1>
                 <ul class="breadcrumb">
                     <li>
-                        <a href="#">Add User</a>
+                        <a href="#">Add Route</a>
                     </li>
                     <li><i class='bx bx-chevron-right' ></i></li>
                     <li>
@@ -142,8 +157,8 @@ export default function ADD()
             </Link>
         </div>
              
-             <div class='usering'>
-                <form onSubmit={Submit}>
+             <div class='usering' >
+                <form onSubmit={Submit} >
                 
                    <table style={
                     {
@@ -152,13 +167,13 @@ export default function ADD()
                         borderBottomLeftRadius:' 60px',
                         borderBottomRightRadius:' 10px',
                         borderTopLeftRadius:' 10px',
-                        backgroundColor: '#3C91E6',
+                        backgroundColor: 'yellow',
                         width: '300px',
                         marginLeft: '30px',
 
                     }
                    }>
-                    <tr><td><p class="title">Add User</p></td></tr>
+                    <tr><td><p class="title">Add Routes</p></td></tr>
                        <tr>
                        
                           <td style={
@@ -169,7 +184,7 @@ export default function ADD()
                                 lineHeight: '2em',
                              
                             }
-                          }>Name:</td>
+                          }>From:</td>
                           </tr>
                           <tr>
                           <td style={
@@ -180,7 +195,27 @@ export default function ADD()
                                 lineHeight: '2em',
                              
                             }
-                          } ><input type='text' class='het' onChange={(e)=>setName(e.target.value)}></input></td>
+                          } ><select  value={from}onChange={(e)=>setFrom(e.target.value)} >
+                          <option value="">Select</option>
+                         <option value="TIRUPPUR NEW BUS STAND" style={{fontSize:"1.3rem"}}>TIRUPPUR</option>
+                         <option value="Perumanallur">Perumanallur</option>
+                         <option value="Kannakapalayam">Kanakampalayam</option>
+                         <option value="Anna Nagar">Anna Nagar</option>
+                         <option value="Pandiya-Nagar">Pandiayanagar</option>
+                         <option value="PoyamaPalayam">PoyamaPalayam</option>
+                         <option value="Pitchampalayam">Pitchampalayam</option>
+                         <option value="Tiruppur new Bustand">Tiruppur new Bustand</option>
+                         <option value="Nesavalar Colony">Nesavalar Colony</option>
+                         <option value="Shanthi-Theater">Shanthi Thearter</option>
+                         <option value="Mettupalayam">Mettupalayam</option>
+                         <option value="Pushpa-Theatre">Pushpa Theater</option>
+                         <option value="Town-Hall">Town Hall</option>
+                         <option value="Tiruppur old Bustand">Tiruppur Old Bustand</option>
+                         <option value="Veerapandi">Veerapandi</option>
+                         <option value="palladam">Palladam</option>
+                         <option value="Coimbatore" style={{fontSize:"1.3rem"}}>COIMBATORE</option>
+                       </select>
+         </td>
                        </tr>
                        <tr>
                        
@@ -192,7 +227,7 @@ export default function ADD()
                              lineHeight: '2em',
                           
                          }
-                       }>Email:</td>
+                       }>To:</td>
                        </tr>
                        <tr>
                        <td style={
@@ -203,113 +238,8 @@ export default function ADD()
                              lineHeight: '2em',
                           
                          }
-                       } ><input type='text' class='het' onChange={(e)=>setEmail(e.target.value)}></input></td>
+                       } ><input type='text' class='het' value={to} onChange={(e)=>setTo(e.target.value)}></input></td>
                     </tr>
-                 
-                       <tr>
-                          <td style={
-                            {
-                                paddingLeft: '45px',
-                                paddingTop: '10px',
-                                fontWeight: '900',
-                                lineHeight: '2em',
-                             
-                            }
-                          }>Roll NO:</td>
-                          </tr>
-                      
-                          <tr>
-                          <td style={
-                            {
-                                paddingLeft: '45px',
-                                paddingTop: '10px',
-                                fontWeight: '900',
-                                lineHeight: '2em',
-                             
-                            }
-                          }><input type='text'  placeholder='' class='het' onChange={(e)=>setRoll(e.target.value)}></input></td>
-                       </tr>
-                    
-                       <tr>
-                          <td style={
-                            {
-                                paddingLeft: '45px',
-                                paddingTop: '10px',
-                                fontWeight: '900',
-                                lineHeight: '2em',
-                             
-                            }
-                          }>Year:</td>
-                          </tr>
-                          <tr>
-                          <td style={
-                            {
-                                paddingLeft: '45px',
-                                paddingTop: '10px',
-                                fontWeight: '900',
-                                lineHeight: '2em',
-                             
-                            }
-                          }><select class='het' onChange={(e)=>setYear(e.target.value)} >
-                          <option value="">Select</option>
-                         <option value="1">I</option>
-                         <option value="1A">II</option>
-                         <option value="1A">III</option>
-                         <option value="1A">IV</option>
-                     
-                       </select></td>
-                       </tr>
-                       <tr>
-                          <td style={
-                            {
-                                paddingLeft: '45px',
-                                paddingTop: '10px',
-                                fontWeight: '900',
-                                lineHeight: '2em',
-                             
-                            }
-                          }>Role:</td>
-                          </tr>
-                          <tr>
-                          <td style={
-                            {
-                                paddingLeft: '45px',
-                                paddingTop: '10px',
-                                fontWeight: '900',
-                                lineHeight: '2em',
-                             
-                            }
-                          }><select class='het' onChange={(e)=>setRole(e.target.value)} >
-                          <option value="">Select</option>
-                         <option value="User">User</option>
-                         <option value="admin">Admin</option>
-
-                     
-                       </select></td>
-                       </tr>
-
-                       <tr>
-                          <td style={
-                            {
-                                paddingLeft: '45px',
-                                paddingTop: '10px',
-                                fontWeight: '900',
-                                lineHeight: '2em',
-                             
-                            }
-                          }>Phone no:</td>
-                          </tr>
-                          <tr>
-                          <td style={
-                            {
-                                paddingLeft: '45px',
-                                paddingTop: '10px',
-                                fontWeight: '900',
-                                lineHeight: '2em',
-                             
-                            }
-                          }><input type='number' class='het' onChange={(e)=>setPhone(e.target.value)}></input></td>
-                       </tr>
                        <tr>
                        
                        <td style={
@@ -331,7 +261,25 @@ export default function ADD()
                              lineHeight: '2em',
                           
                          }
-                       } ><input type='text' class='het' onChange={(e)=>setBus(e.target.value)}></input></td>
+                       } ><select  value={bus}onChange={(e)=>setBus(e.target.value)} >
+                        <option value="">Select</option>
+                       <option value="1">1</option>
+                       <option value="1A">1A</option>
+                       <option value="1B">1B</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                       <option value="6">6</option>
+                       <option value="7">7</option>
+                       <option value="9">9</option>
+                       <option value="10">10</option>
+                       <option value="10A">10A</option>
+                       <option value="10B">10B</option>
+                       <option value="10C">10C</option>
+                       <option value="10D">10D</option>
+                       <option value="10E">10E</option>
+                       <option value="11">11</option>
+                     </select></td>
                     </tr>
 
                     <tr>
@@ -344,7 +292,7 @@ export default function ADD()
                              lineHeight: '2em',
                           
                          }
-                       }>Boarding:</td>
+                       }>Amount:</td>
                        </tr>
                        <tr>
                        <td style={
@@ -355,8 +303,10 @@ export default function ADD()
                              lineHeight: '2em',
                           
                          }
-                       } ><input type='text' class='het' onChange={(e)=>setBoarding(e.target.value)}></input></td>
+                       } ><input type='number' class='het' value={amount} onChange={(e)=>setAmount(e.target.value)}></input></td>
                     </tr>
+                       
+                      
                    
                        <tr>
                         <td style={
@@ -372,7 +322,7 @@ export default function ADD()
                         </td>
                        </tr>
                        <tr rowspan='2'>
-                         <button class='bu'>+Add</button>
+                         <button type ="submit" class='bu'>+Add Route</button>
                        </tr>
                    </table>
                 </form>

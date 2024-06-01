@@ -37,9 +37,9 @@ export default function NOTIFY()
         </li>
 
         <li>
-            <Link to="/deva">
-            <i class='bx bxs-bus' ></i>
-                <span class="text">Bus Routes</span>
+            <Link to="/addroute">
+            <i class='bx bx-plus-medical'></i>
+                <span class="text">Add Routes</span>
             </Link>
         </li>
         <li>

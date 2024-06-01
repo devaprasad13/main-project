@@ -90,7 +90,7 @@ body {
     }
 }
 
-/* SIDEBAR */
+/* SIDEBAR 
 #sidebar {
     position: fixed;
     top: 0;
@@ -197,7 +197,7 @@ body {
     display: flex;
     justify-content: center;
 }
-/* SIDEBAR */
+*/
 
 
 
@@ -511,7 +511,18 @@ body {
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     box-shadow: 0px 0px 20px -18px;
   }
-  
+  select
+  {
+    width: 80%;
+    max-width: 183px;
+    height: 35px;
+   
+    border-radius: 6px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+  }
   .input:hover {
     border: 2px solid lightgrey;
     box-shadow: 0px 0px 20px -17px;
@@ -530,6 +541,7 @@ body {
   {
     border-radius: 3px;
     border: none;
+    padding-left: 10px;
   }
   .sel
   {

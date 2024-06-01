@@ -42,11 +42,35 @@ body {
     overflow-x: hidden;
 }
 
+/* Sidebar styles */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: -250px; /* Sidebar is hidden by default */
+    transition: left 0.3s ease;
+}
+
+/* Sidebar open state */
+#sidebar.sidebar-open {
+    left: 0;
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* To ensure it's above the sidebar */
+}
+
+/* Add more styles as needed for responsiveness */
 
 
 
 
 /* SIDEBAR */
+
 #sidebar {
     position: fixed;
     top: 0;
@@ -152,7 +176,7 @@ body {
     min-width: calc(60px  - ((4px + 6px) * 2));
     display: flex;
     justify-content: center;
-}
+} 
 /* SIDEBAR */
 
 

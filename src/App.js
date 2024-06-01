@@ -1,22 +1,24 @@
 
 import { Route } from "react-router-dom";
 import { Routes } from "react-router-dom";
-import Miniland from "./deva";
-import Landingpages from "./Landingpage";
-import Abbout from "./abbout";
-import CARD from "./LOOGINCARD";
-import LOGIN from "./LOOGIN";
-import FACULTY from "./LOOGINFACULTY";
-import ADMIN from "./LOOGINADMIN";
+import Miniland from "./User/deva";
+import Landingpages from "./User/Landingpage";
+import Abbout from "./User/abbout";
+import CARD from "./User/LOOGINCARD";
+import LOGIN from "./User/LOOGIN";
+import FACULTY from "./User/LOOGINFACULTY";
+import ADMIN from "./User/LOOGINADMIN";
 import Dash from './admin/Dash';
 import ADD from "./admin/Add";
 import NOTIFY from "./admin/Notify";
-import Fee from "./feesdetails";
+import Fee from "./User/feesdetails";
 import Rotes from "./admin/Routes";
-import ProfilePhot from "./profile";
+import ProfilePhot from "./User/profile";
 import View from "./admin/view";
 import Update from "./admin/userup";
-
+import Addroutes from "./admin/routeadd";
+import Sidebar from "./Admins/Sidebar";
+import Abouts from "./Admins/Abouts";
 export default function App() {
   return (
    <>
@@ -36,8 +38,10 @@ export default function App() {
            <Route path='/prof' element={<ProfilePhot/>}></Route>
            <Route path='/view' element={<View/>}></Route>
            <Route path='/up/:id' element={<Update/>}></Route>
-           
-
+           <Route path ='/addroute' element={<Addroutes/>}></Route>
+           <Route path ='/sidebar' element={<Sidebar/>}></Route>
+           <Route path ='/sidebarsabout' element={<Abouts/>}></Route>
+  
            
            
      </Routes>

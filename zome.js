@@ -5,36 +5,30 @@ export default function Zome()
 {
     return(
         <>
-      <div class="section__container header__container" id="home">
-        <h1>No Matter Where You Are Going From, We Take You There</h1>
-        <p>
-          You do not have the right to remain silent. Let us know what it takes
-          to challenge you
-        </p>
-        <div class="booking">
-          <div class="booking__type" id="booking-type">
-            <div class="active">One Way</div>
-            <div>Round Trip</div>
-            <div>Multi City</div>
-          </div>
-          <form action="/" class="booking__form">
-            <div class="booking__input">
-              <label for="arrival">To</label>
-              <input type="text" placeholder="Arrival" />
-            </div>
-            <div class="booking__input">
-              <label for="departure">From</label>
-              <input type="text" placeholder="Departure" />
-            </div>
-            <div class="booking__input">
-              <label for="date">Date</label>
-              <input type="text" placeholder="Date" />
-            </div>
-          </form>
-          <div class="booking__btn">
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
+      <div>
+        
+      <select  value={from}onChange={(e)=>setFrom(e.target.value)} >
+                        <option value="">Select</option>
+                       <option value="TIRUPPUR NEW BUS STAND">TIRUPPUR</option>
+                       <option value="Perumanallur">Perumanallur</option>
+                       <option value="Kannakapalayam">Kanakampalayam</option>
+                       <option value="Anna Nagar">Anna Nagar</option>
+                       <option value="Pandiya-Nagar">Pandiayanagar</option>
+                       <option value="PoyamaPalayam">PoyamaPalayam</option>
+                       <option value="Pitchampalayam">Pitchampalayam</option>
+                       <option value="Pitchampalayam">Tiruppur new Bustand</option>
+                       <option value="Nesavalar Colony">Nesavalar Colony</option>
+                       <option value="Shanthi-Theater">Shanthi Thearter</option>
+                       <option value="Mettupalayam">Mettupalayam</option>
+                       <option value="Pushpa-Theatre">Pushpa Theater</option>
+                       <option value="Town-Hall">Town Hall</option>
+                       <option value="Tiruppur old Bustand">Tiruppur Old Bustand</option>
+                       <option value="Veerapandi">Veerapandi</option>
+                       <option value="palladam">Palladam</option>
+                       <option value="Coimbatore" style={{fontSize:"3rem"}}>Coimbatore</option>
+                     </select>
+       
+         
 </div>
        </>
     )

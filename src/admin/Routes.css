@@ -41,12 +41,6 @@ body {
     background: var(--grey);
     overflow-x: hidden;
 }
-
-
-
-
-
-/* SIDEBAR */
 #sidebar {
     position: fixed;
     top: 0;
@@ -153,7 +147,7 @@ body {
     display: flex;
     justify-content: center;
 }
-/* SIDEBAR */
+ 
 
 
 

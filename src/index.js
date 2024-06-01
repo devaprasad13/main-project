@@ -7,7 +7,7 @@ import './index.css';
 import AOS from 'aos';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-
+import Sidebar from './Admins/Sidebar';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import App from './App';
 
@@ -16,7 +16,7 @@ AOS.init();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <BrowserRouter>
-  <React.StrictMode>
+<React.StrictMode>
   <App/>
   </React.StrictMode>
   </BrowserRouter>

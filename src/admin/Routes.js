@@ -37,10 +37,10 @@ export default function Rotes()
         </li>
 
         <li>
-            <a to="/deva">
+            <Link to="/addroute">
             <i class='bx bxs-bus' ></i>
-                <span class="text">Bus Routes</span>
-            </a>
+                <span class="text">AddRoutes</span>
+            </Link>
         </li>
         <li>
             <a href="#">

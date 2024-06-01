@@ -1,8 +1,13 @@
 
 import { Link } from 'react-router-dom'
 import './Dash.css'
+import {useState} from 'react';
 export default function Dash()
 {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleSidebar = () => {
+        setIsOpen(!isOpen);
+    };
     let Wel = ()=>
     {
         return alert("Wlecome Admin, Thankyou for maintaing a KCE Transport");
@@ -13,7 +18,8 @@ export default function Dash()
              <body>
 
         
-
+<div>
+    
 <div id="sidebar">
     <Link href="#" class="brand">
     <i to='/land'></i>
@@ -40,9 +46,9 @@ export default function Dash()
         </li>
 
         <li>
-            <Link href="/rot">
-            <i class='bx bxs-bus' ></i>
-                <span class="text">Bus Routes</span>
+            <Link to="/addroute">
+            <i class='bx bx-plus-medical'></i>
+                <span class="text">Add Routes</span>
             </Link>
         </li>
         <li>
@@ -85,7 +91,9 @@ export default function Dash()
 <div id="contest">
    
     <nav>
-        <i class='bx bx-menu' ></i>
+    <button className="sidebar-toggle" onClick={toggleSidebar}>
+                {isOpen ? 'Close' : 'Open'} Sidebar
+            </button>
         <a href="#" class="nav-link">Categories</a>
         <form action="#">
             <div class="form-input">
@@ -215,7 +223,7 @@ export default function Dash()
     </main>
  
 </div>
-
+</div>
 
 
 </body>
