@@ -42,7 +42,7 @@ export default function LOGIN()
              }
             })
         .catch(err => console.log(err))
-        .finally(()=>setLoading(true))
+        .finally(()=>setLoading(false))
         
     }
     const [see,setsee] = useState();
