@@ -97,7 +97,7 @@ export default function LOGIN()
 </div>
 <div class="input-group mb-3">
     <button class="btn btn-lg btn-primary w-100 fs-6"  disabled={loading}>{
-        loading ? ( <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> ):('Login')
+        loading ? ( <span  role="status" aria-hidden="true">Logging...</span> ):('Login')
         }</button>
 </div>
 <div class="input-group mb-3">
