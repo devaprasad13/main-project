@@ -20,12 +20,15 @@ export default function LOGIN()
     const Submit = (e)=>
     {
        e.preventDefault();
+       setLoading(true);
         axios.post("http://localhost:3001/log",{email,password})
         .then(result=> {console.log(result)
              if(result.data.Status === "Success")
              {
+                setLoading(true);
                 if(result.data.role === "admin")
                 {
+
                     navigate('/dash')
                 }
                 else
@@ -49,13 +52,7 @@ export default function LOGIN()
    }
     return(
         <>
-          { loading ? (
-            <div class ="spiro">
-            <div className="d-flex justify-content-center">
-               <span class="loader"></span>
-          </div>
-          </div>
-         ):(
+        
          <div class='hell' >
             <div class='bor'data-aos="zoom-in-up" data-aos-duration="1000">
 <div class="container d-flex justify-content-center align-items-center min-vh-100" style={{paddingTop:'92px'}}>
@@ -99,7 +96,9 @@ export default function LOGIN()
     </div>
 </div>
 <div class="input-group mb-3">
-    <button class="btn btn-lg btn-primary w-100 fs-6"  >Login</button>
+    <button class="btn btn-lg btn-primary w-100 fs-6"  disabled={loading}>{
+        loading ? ( <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> ):('Login')
+        }</button>
 </div>
 <div class="input-group mb-3">
     <button class="btn btn-lg btn-light w-100 fs-6" onClick={()=>navigate('/land') }><img src="" style={{width:"20px"}} class="me-2"/><small><i class='bx bxl-google'></i> Sign In with Google</small></button>
@@ -117,7 +116,7 @@ export default function LOGIN()
 </div>
 </div>
 </div>
-   )}
+  
         </>
     )
 }
