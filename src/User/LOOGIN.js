@@ -25,7 +25,7 @@ export default function LOGIN()
         .then(result=> {console.log(result)
              if(result.data.Status === "Success")
              {
-                setLoading(true);
+            
                 if(result.data.role === "admin")
                 {
 
@@ -39,6 +39,7 @@ export default function LOGIN()
              else
              {
                 alert("Please Enter the Correct Password/Email")
+                console.log("error");
              }
             })
         .catch(err => console.log(err))
