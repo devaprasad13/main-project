@@ -8,6 +8,8 @@ import { useNavigate } from 'react-router-dom';
 import {useState} from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function LOGIN()
 {
     const navigate = useNavigate();
@@ -25,21 +27,23 @@ export default function LOGIN()
         .then(result=> {console.log(result)
              if(result.data.Status === "Success")
              {
-            
+                
                 if(result.data.role === "admin")
                 {
-
+                    toast.success("Login successfully");
                     navigate('/dash')
                 }
                 else
                 {
+                  toast.success("Login successfully");
                     navigate('/land')
+                    
+ 
                 }
              }
              else
              {
-                alert("Please Enter the Correct Password/Email")
-                console.log("error");
+                toast.error("Please Enter the correct password/email.");
              }
             })
         .catch(err => console.log(err))
@@ -117,7 +121,7 @@ export default function LOGIN()
 </div>
 </div>
 </div>
-  
+<ToastContainer />
         </>
     )
 }
