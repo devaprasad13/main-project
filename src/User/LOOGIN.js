@@ -23,7 +23,7 @@ export default function LOGIN()
     {
        e.preventDefault();
        setLoading(true);
-        axios.post("https://transportbackend-pqqx.onrender.com/log",{email,password})
+        axios.post("REACT_APP_API_URL/log",{email,password})
         .then(result=> {console.log(result)
              if(result.data.Status === "Success")
              {
