@@ -23,7 +23,6 @@ export default function Feel() {
         console.log(resp.data);
         setSearch(resp.data);
         setFrom("");
-      
         setBus("");
       } 
       else {

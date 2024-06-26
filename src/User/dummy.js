@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col';
 import pho from '../Images/45454.jpg'
 export default function Her()
 {
+  
+       
     return(
         <>
           {/* <div class="search-destiny">
@@ -99,7 +101,7 @@ export default function Her()
           }></div>
 <div class="contact-forms">
 
-          <form action="" id="contact-form">
+          <form action="" id="contact-form"> 
            
             <div class="input-box">
               <input type="text" required="true" name=""/>

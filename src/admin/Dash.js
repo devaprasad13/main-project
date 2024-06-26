@@ -2,6 +2,8 @@
 import { Link } from 'react-router-dom'
 import './Dash.css'
 import {useState} from 'react';
+import axios, * as others from 'axios';
+import { useEffect } from 'react';
 export default function Dash()
 {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +14,28 @@ export default function Dash()
     {
         return alert("Wlecome Admin, Thankyou for maintaing a KCE Transport");
     }
+
+    const [count,setCount] = useState(0);
+   
+    useEffect(()=>
+    {
+        const founder = async ()=> 
+        {
+             try
+             {
+                const response = await axios.get("http://localhost:3001/count")
+                console.log(response.data);
+                setCount(response.data.counter)
+             }
+             catch(err)
+             {
+                console.log(err);
+             }
+        }
+        
+        founder();
+    })
+
     return (
         (
             <>
@@ -136,7 +160,7 @@ export default function Dash()
                 <i class='bx bxs-group' ></i>
             
                 <span class="text">
-                    <h3>30</h3>
+                    <h3>{count}</h3>
                     <p>Total Users</p>
                 </span>
             </li>
