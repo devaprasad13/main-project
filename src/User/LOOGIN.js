@@ -23,7 +23,7 @@ export default function LOGIN()
     {
        e.preventDefault();
        setLoading(true);
-        axios.post("process.env.REACT_APP_API_URL/log",{email,password})
+        axios.post(`${process.env.REACT_APP_API_URL}/log`,{email,password})
         .then(result=> {console.log(result)
              if(result.data.Status === "Success")
              {
