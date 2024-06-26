@@ -17,7 +17,7 @@ export default function Feel() {
       bus,
     };
     try {
-      const resp = await axios.post("http://localhost:3001/it", item);
+      const resp = await axios.post("https://transportbackend-pqqx.onrender.com/it", item);
 
       if (resp.status === 200) {
         console.log(resp.data);
