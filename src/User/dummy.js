@@ -1,14 +1,41 @@
 import pi from '../Images/io.jpg';
 import './dummy.css';
+import React, { useRef } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
-import pho from '../Images/45454.jpg'
+import emailjs from '@emailjs/browser';
+import pho from '../Images/45454.jpg';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export default function Her()
 {
-  
-       
+    const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_txk50nq', 'template_868y50r', form.current, {
+        publicKey: '4LUTdGyRw8fEAQMlr',
+      })
+      .then(
+        (ei) => {
+          console.log('SUCCESS!');
+          if(ei)
+            {
+              toast.success("Email sent successfully");
+            }
+            else
+            {
+              toast.error("Email Failed to sent");
+            }
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
     return(
         <>
           {/* <div class="search-destiny">
@@ -101,21 +128,21 @@ export default function Her()
           }></div>
 <div class="contact-forms">
 
-          <form action="" id="contact-form"> 
+          <form  id="contact-form" ref={form} onSubmit={sendEmail}> 
            
             <div class="input-box">
-              <input type="text" required="true" name=""/>
-              <span>Full Name</span>
+              <input type="text" required="true" placeholder='Username' name="from_name"/>
+             
             </div>
             
             <div class="input-box">
-              <input type="email" required="true" name=""/>
-              <span>Email</span>
+              <input type="email" required="true" placeholder='Email' name="from_email"/>
+              
             </div>
             
             <div class="input-box">
-              <textarea required="true" name=""></textarea>
-              <span>Type your Message...</span>
+              <textarea required="true" name="message" placeholder='Type your Message'></textarea>
+             
             </div>
             
             <div class="input-box">
@@ -170,6 +197,7 @@ export default function Her()
      
         
         }
+        <ToastContainer />
         </>
     )
 }
