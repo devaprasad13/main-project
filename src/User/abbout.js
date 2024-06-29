@@ -10,6 +10,7 @@ import Her from './dummy';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './run.css'
+import cl from '../Images/ABOUT.png'
 export default function Abbout()
 {
     return (
@@ -49,9 +50,9 @@ export default function Abbout()
           width:'100%',
          
     }}>
-      <img src={pi}  class='apla'style={{
+      <img src={cl}  class='apla'style={{
         width:'100%',
-        padding:'60px 20px 0px 20px'
+        padding:'8px 20px 0px 20px'
       }}/>
     </div>
           </Col>
@@ -74,7 +75,7 @@ export default function Abbout()
         color: '#f56f42',
       }}>FOR EVERYONE</span></span>
       <p style={{
-          fontSize: '1.1rem',
+          fontSize: '1.5rem',
           marginTop:'25px',
           color:'black'
       }}>
@@ -97,7 +98,7 @@ export default function Abbout()
 
   
   <div class='d44'   style={{
-    background:'white'
+    background:'#EEEEEE'
   }}>
        <Her/>
    </div>

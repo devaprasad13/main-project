@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './Barnav.css';
 import pho from '../Images/45454.jpg';
 import po from '../Images/ioo.PNG'
+import el from '../Images/er.png'
 import Running from './run';
 export default function Bar()
 {
@@ -11,9 +12,9 @@ export default function Bar()
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
         <div class="logo">
-        <img id="#logo" src={po} style={
+        <img id="#logo" src={el} style={
           {
-            width:'70px',
+            width:'200px',
           
            
           }
@@ -22,7 +23,7 @@ export default function Bar()
         </img>
        
       </div>
-      <div class='p1'>
+      {/* <div class='p1'>
       <span  class="ml" style={
           {
             color:'black',
@@ -33,7 +34,7 @@ export default function Bar()
             marginLeft:'5px',
            fontFamily:'Zilla Slab serif',
           }
-        }>K<span style={{color:"red",  fontFamily:'Zilla Slab serif',}}>C</span>E TRANSPORT</span></div>
+        }>K<span style={{color:"red",  fontFamily:'Zilla Slab serif',}}>C</span>E TRANSPORT</span></div> */}
          <div class='y1' style={
           {
             width:"1px",

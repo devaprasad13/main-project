@@ -61,6 +61,7 @@ nav .navbar .menu{
   width: 100%;
     border-top: 2px solid #333;
     color:#777;
+    
 }
 
 
@@ -74,7 +75,7 @@ nav .navbar .menu{
   color: #96c7e8;
   font-size: 70px;
   font-weight: 30px;
-  background: rgb(14, 10, 18);
+  background: #393E46;
   border-top: 2px solid #333;
 }
 #hero {
@@ -173,7 +174,7 @@ nav .navbar .menu{
   padding-top:8%;
   padding-left: 10%;
   padding-right: 10%;
-  background: white;
+  background:#EEEEEE;
    
   border-top: 2px solid #333;
 }
@@ -186,10 +187,9 @@ nav .navbar .menu{
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom:18%;
-   background-color:#ffffff;
-   background: #2193b0;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-color:#EEEEEE;
+  /* fallback for old browsers */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    
    
 

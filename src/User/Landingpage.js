@@ -749,7 +749,7 @@ export default function Landingpages()
 
   
   <div class='d44' id='down' style={{
-    background:'white'
+    background:'#EEEEEE'
   }}>
        <Her/>
    </div>

@@ -94,18 +94,18 @@ nav .navbar .menu{
   color: #96c7e8;
   font-size: 70px;
   font-weight: 30px;
-  background: rgb(0, 0, 0);
+  background:#393E46;
   border-top: 2px solid #333;
 }
 .d77
 {
 
-  height: auto;
+  height: 100vh;
   width: 100%;
-  padding: 50px 5% 4px;
+  padding: 96px 5% 4px;
     border-top: 2px solid #333;
     color:#777;
-    background-image: url("../Images/feeimages.png");
+    background:#EEEEEE;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

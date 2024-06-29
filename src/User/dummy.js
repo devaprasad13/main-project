@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import emailjs from '@emailjs/browser';
 import pho from '../Images/45454.jpg';
+import ip from'../Images/pp.png'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export default function Her()
@@ -79,9 +80,12 @@ export default function Her()
           <Col >
           <div class='firsthalfs' data-aos="fade-right" data-aos-duration="1000">
         <strong>
-               <img src={pho} style={
+               <img src={ip} style={
                 {
                   width:'15em',
+                  paddingLeft:'25px',
+                  paddingTop:'20px'
+
                 }
                }></img>
                <br></br>
@@ -112,14 +116,15 @@ export default function Her()
           <div class='secondhalfs' data-aos="fade-left"  data-aos-duration="1000">
              <h1 style={{
               paddingLeft:'10px',
-              fontWeight:'700'
+              fontWeight:'700',
+              color:"#2D3D49"
              }}>Get in Connect</h1>
 
 <div id="m" style={
             {
               width: '250px',
               height: '2px',
-              backgroundColor:'#f2820a' ,
+              backgroundColor:'#EEEEEE' ,
               marginTop:'2px',
               marginLeft:'2em',
            borderRadius: '2px',
@@ -161,7 +166,8 @@ export default function Her()
 <div class='secondhalfs' data-aos="fade-left"  data-aos-duration="1000">
    <h1 style={{
     paddingLeft:'10px',
-    fontWeight:'700'
+    fontWeight:'700',
+    color:"#2D3D49"
    }}>Transport Office</h1>
 
 <div id="m" style={

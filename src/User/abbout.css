@@ -86,7 +86,7 @@ a.active
   color: #96c7e8;
   font-size: 70px;
   font-weight: 30px;
-  background: blueviolet;
+  background: #393E46;
   border-top: 2px solid #333;
 }
 #heros {
@@ -186,7 +186,7 @@ a.active
   padding: 90px 5% 4px;
     border-top: 2px solid #333;
     color:#777;
-    background:white;
+    background:#EEEEEE;
      /* fallback for old browsers */
 
 }
@@ -197,7 +197,7 @@ a.active
   padding-top:120px;
   padding-left: 10%;
   padding-right: 10%;
-  background-color:#b1dcf2;
+  background-color:#EEEEEE;
   border-top: 2px solid #333;
 }
 

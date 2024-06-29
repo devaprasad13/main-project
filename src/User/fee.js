@@ -4,13 +4,16 @@ import { useState } from "react";
 import axios from "axios";
 import fro from "../Images/from.png";
 export default function Feel() {
+
+  
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("KCE");
   const [bus, setBus] = useState("");
   const [search, setSearch] = useState([]);
-
+  const[loading, setLoading] = useState(false);
   const Search = async (e) => {
     e.preventDefault();
+    setLoading(true);
     const item = {
       from,
       to,
@@ -31,6 +34,9 @@ export default function Feel() {
     } catch (error) {
       console.error("Error fetching data:", error);
      
+    }
+    finally{
+       setLoading(false);
     }
   };
   console.log(typeof search);
@@ -100,8 +106,8 @@ export default function Feel() {
               />
             </div>
 
-            <button class="bn" type="submit">
-              <i class="bi bi-search"></i>Search
+            <button class="bn" type="submit" disabled={loading}>{loading ? ( <span><i class="bi bi-search"></i>Searching...</span> ):(<span><i class="bi bi-search"></i> Search</span>)}
+            
             </button>
           </form>
           <div>
